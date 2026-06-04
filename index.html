@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal Feed — joneslab.dev</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #F5F5F0;
+      color: #1a1a1a;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── MASTHEAD ──────────────────────────────────────────────── */
+    #masthead {
+      background: #000;
+      color: #fff;
+      padding: 18px 20px 14px;
+      text-align: center;
+      border-bottom: 4px double #fff;
+    }
+
+    #masthead h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 8vw, 80px);
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    #masthead-sub {
+      margin-top: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      font-size: 12px;
+      opacity: 0.72;
+      letter-spacing: 0.06em;
+    }
+
+    #masthead-sub .sep {
+      opacity: 0.4;
+    }
+
+    #refresh-btn {
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.45);
+      color: #fff;
+      font-size: 10px;
+      font-family: inherit;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+
+    #refresh-btn:hover  { background: rgba(255,255,255,0.12); }
+    #refresh-btn:active { background: rgba(255,255,255,0.22); }
+    #refresh-btn:disabled { opacity: 0.5; cursor: default; }
+
+    /* ── LAST UPDATED ──────────────────────────────────────────── */
+    #updated-bar {
+      border-bottom: 1px solid #c8c8c0;
+      background: #F5F5F0;
+    }
+
+    #updated-bar .container {
+      display: flex;
+      justify-content: flex-end;
+      padding: 5px 0;
+    }
+
+    #updated-text {
+      font-size: 11px;
+      color: #777;
+      font-style: italic;
+    }
+
+    /* ── STUB BANNER ───────────────────────────────────────────── */
+    #stub-banner {
+      display: none;
+      background: #fdf8e1;
+      border-bottom: 1px solid #d4c44a;
+      text-align: center;
+      padding: 6px 16px;
+      font-size: 12px;
+      color: #7a6800;
+    }
+
+    /* ── CONTAINER ─────────────────────────────────────────────── */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ── SECTION HEADERS ───────────────────────────────────────── */
+    .section-head {
+      font-family: Georgia, serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #000;
+      border-top: 3px solid #000;
+      border-bottom: 1px solid #000;
+      padding: 5px 0 4px;
+      margin: 20px 0 0;
+    }
+
+    /* ── HEADLINES ─────────────────────────────────────────────── */
+    #headlines-section { padding-bottom: 4px; }
+
+    #headlines-list,
+    #more-items { margin-top: 2px; }
+
+    .item {
+      border-bottom: 1px solid #d8d8d0;
+      padding: 11px 0 10px;
+    }
+
+    .item:last-child { border-bottom: none; }
+
+    .item-row1 {
+      display: flex;
+      align-items: baseline;
+      gap: 9px;
+      flex-wrap: wrap;
+    }
+
+    .cat-label {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .item-link {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+
+    .item-link:hover { text-decoration: underline; color: #000; }
+    .item-link:visited { color: #5a5a5a; }
+
+    .item-meta {
+      margin-top: 3px;
+      font-size: 11px;
+      color: #888;
+    }
+
+    .item-score { color: #bbb; }
+
+    .item-desc {
+      margin-top: 5px;
+      font-size: 13px;
+      color: #4a4a4a;
+      line-height: 1.45;
+    }
+
+    /* ── MORE TOGGLE ───────────────────────────────────────────── */
+    #more-row {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0 2px;
+      border-top: 1px solid #d0d0c8;
+    }
+
+    #more-btn {
+      background: none;
+      border: 1px solid #bbb;
+      font-size: 11px;
+      font-family: inherit;
+      color: #555;
+      padding: 3px 12px;
+      cursor: pointer;
+      border-radius: 2px;
+      letter-spacing: 0.04em;
+    }
+
+    #more-btn:hover { background: #eae9e0; }
+
+    #more-items { display: none; }
+    #more-items.open { display: block; }
+
+    /* ── SOURCES ───────────────────────────────────────────────── */
+    #sources-section { padding-bottom: 32px; }
+
+    .sources-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px 36px;
+      padding-top: 16px;
+    }
+
+    @media (max-width: 660px) {
+      .sources-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 420px) {
+      .sources-grid { grid-template-columns: 1fr; }
+    }
+
+    .src-cat-label {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 4px;
+      margin-bottom: 7px;
+    }
+
+    .src-list { list-style: none; }
+
+    .src-list li { margin-bottom: 5px; }
+
+    .src-list a {
+      font-size: 12px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .src-list a:hover { text-decoration: underline; }
+    .src-list a:visited { color: #999; }
+
+    /* ── FOOTER ────────────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid #c8c8c0;
+      text-align: center;
+      padding: 12px 0 16px;
+      font-size: 11px;
+      color: #aaa;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div id="masthead">
+  <h1>Signal Feed</h1>
+  <div id="masthead-sub">
+    <span>feed.joneslab.dev</span>
+    <span class="sep">|</span>
+    <span id="today-date"></span>
+    <span class="sep">|</span>
+    <button id="refresh-btn" onclick="loadFeed()">↻ Refresh</button>
+  </div>
+</div>
+
+<!-- LAST UPDATED -->
+<div id="updated-bar">
+  <div class="container">
+    <span id="updated-text">Loading…</span>
+  </div>
+</div>
+
+<!-- STUB BANNER -->
+<div id="stub-banner">Showing sample data — live feed connects tomorrow</div>
+
+<div class="container">
+
+  <!-- HEADLINES -->
+  <section id="headlines-section">
+    <div class="section-head">Today's Signal</div>
+    <div id="headlines-list"></div>
+    <div id="more-row">
+      <button id="more-btn" onclick="toggleMore()">▼ More (<span id="more-count">0</span>)</button>
+    </div>
+    <div id="more-items"></div>
+  </section>
+
+  <!-- SOURCES -->
+  <section id="sources-section">
+    <div class="section-head">Sources</div>
+    <div class="sources-grid" id="sources-grid"></div>
+  </section>
+
+</div>
+
+<footer>Signal Feed — joneslab.dev</footer>
+
+<script>
+/* ── CONFIG ──────────────────────────────────────────────────────── */
+const FEED_URL = "PLACEHOLDER_BLOB_URL/signal-feed.json";
+
+const COLORS = {
+  "AI Builders":           "#1a3a5c",
+  "Small Business":        "#2d5a27",
+  "Workflows":             "#4a3a6b",
+  "Bitcoin":               "#b8620a",
+  "Platform News":         "#8b1a1a",
+  "People Worth Watching": "#555555",
+};
+
+/* ── STUB DATA ───────────────────────────────────────────────────── */
+const STUB = {
+  updated_at: new Date().toISOString(),
+  items: [
+    {
+      headline: "Anthropic ships Claude 4 with extended thinking and 200K context window",
+      url: "https://anthropic.com/news",
+      source: "Anthropic Blog",
+      category: "Platform News",
+      score: 9,
+      description: "New flagship model adds transparent multi-step reasoning and doubles the previous context limit — direct impact on Hermes agent capabilities."
+    },
+    {
+      headline: "Simon Willison releases LLM 0.17 with plugin support for local models",
+      url: "https://simonwillison.net",
+      source: "Simon Willison's Blog",
+      category: "AI Builders",
+      score: 9,
+      description: "The CLI tool now supports Ollama and LM Studio via a unified plugin interface — runnable on any machine, offline, no API keys."
+    },
+    {
+      headline: "Indie founder crosses $10K MRR with AI scheduling tool built in 90 days",
+      url: "https://indiehackers.com",
+      source: "Indie Hackers",
+      category: "Small Business",
+      score: 8,
+      description: "Solo developer Ben Hoang details the full stack, pricing strategy, and customer acquisition playbook — relevant comp for UTU."
+    },
+    {
+      headline: "OpenAI rolls out GPT-4o canvas editing to all Plus users",
+      url: "https://openai.com/news",
+      source: "OpenAI Blog",
+      category: "Platform News",
+      score: 8,
+      description: "Document editing within the chat interface goes GA without switching to a separate tool."
+    },
+    {
+      headline: "Hugging Face releases SmolVLM-2: a 2B vision model that runs on a laptop",
+      url: "https://huggingface.co/blog",
+      source: "Hugging Face Blog",
+      category: "AI Builders",
+      score: 8,
+      description: "Benchmarks within 3% of GPT-4V on visual reasoning tasks, weights fully open."
+    },
+    {
+      headline: "El Salvador expands Bitcoin integration to government supplier payments",
+      url: "https://bitcoinmagazine.com",
+      source: "Bitcoin Magazine",
+      category: "Bitcoin",
+      score: 7,
+      description: "State contractors can now invoice and receive in BTC directly through the Chivo wallet system."
+    },
+    {
+      headline: "How Arvid Kahl automated his entire content pipeline with AI agents",
+      url: "https://thebootstrappedfounder.com",
+      source: "Bootstrapped Founder",
+      category: "Small Business",
+      score: 7,
+      description: "Exact tools, prompts, and scheduling system to run The Bootstrapped Founder at scale — applies to ChillWave and Saucy workflows."
+    },
+    {
+      headline: "Notion AI summarizer workflow that actually gets used",
+      url: "https://nesslabs.com",
+      source: "Ness Labs",
+      category: "Workflows",
+      score: 7,
+      description: "Structured template uses Claude to digest meeting notes and surface only the decisions that need action."
+    },
+    {
+      headline: "Google DeepMind releases Gemini 1.6 Flash with sub-300ms API response times",
+      url: "https://deepmind.google/discover/blog",
+      source: "Google DeepMind",
+      category: "Platform News",
+      score: 7,
+      description: "New Flash tier targets production apps that need real-time inference without paying for Pro-tier compute."
+    },
+    {
+      headline: "Mistral releases Codestral 2.0 with 128K context and function calling",
+      url: "https://mistral.ai/news",
+      source: "Mistral",
+      category: "AI Builders",
+      score: 6,
+      description: "Open-weights code model matches GPT-4 Turbo on HumanEval while running on a single A100."
+    },
+    {
+      headline: "The exact pre-sell SOP Justin Welsh uses before building anything",
+      url: "https://justinwelsh.me",
+      source: "Saturday Solopreneur",
+      category: "Small Business",
+      score: 6,
+      description: "Repeatable framework that validates audience before writing a single line of code or content."
+    },
+    {
+      headline: "HN thread: replacing Zapier with n8n + Claude for $0/month",
+      url: "https://news.ycombinator.com",
+      source: "Hacker News",
+      category: "Workflows",
+      score: 6,
+      description: "Solo operator documents swapping a $500/month Zapier plan for a self-hosted n8n instance with AI routing."
+    },
+    {
+      headline: "Nike begins accepting Bitcoin for limited-release drops via BitPay",
+      url: "https://bitcoinmagazine.com",
+      source: "Bitcoin Magazine",
+      category: "Bitcoin",
+      score: 5,
+      description: "Rollout starts with SNKRS app in the US, expanding to EU by Q3."
+    },
+    {
+      headline: "Meta releases Llama 3.2 Vision: open multimodal with 11B and 90B variants",
+      url: "https://ai.meta.com/blog",
+      source: "Meta AI",
+      category: "AI Builders",
+      score: 5,
+      description: "Both variants are fully open-weight and optimized for on-device inference on Qualcomm hardware."
+    }
+  ]
+};
+
+/* ── SOURCES ─────────────────────────────────────────────────────── */
+const SOURCES = [
+  {
+    label: "AI Builders",
+    color: COLORS["AI Builders"],
+    links: [
+      ["Simon Willison's Blog", "https://simonwillison.net"],
+      ["Ben's Bites",           "https://bensbites.beehiiv.com"],
+      ["TLDR AI",               "https://tldr.tech/ai"],
+      ["Hacker News",           "https://news.ycombinator.com"],
+      ["Hugging Face Blog",     "https://huggingface.co/blog"],
+      ["Product Hunt",          "https://producthunt.com"],
+    ]
+  },
+  {
+    label: "Platform News",
+    color: COLORS["Platform News"],
+    links: [
+      ["Anthropic",        "https://anthropic.com/news"],
+      ["OpenAI",           "https://openai.com/news"],
+      ["Google DeepMind",  "https://deepmind.google/discover/blog"],
+      ["Google AI",        "https://blog.google/technology/ai"],
+      ["Meta AI",          "https://ai.meta.com/blog"],
+      ["Mistral",          "https://mistral.ai/news"],
+    ]
+  },
+  {
+    label: "Small Business",
+    color: COLORS["Small Business"],
+    links: [
+      ["Indie Hackers",        "https://indiehackers.com"],
+      ["Bootstrapped Founder", "https://thebootstrappedfounder.com"],
+      ["The Hustle",           "https://thehustle.co"],
+      ["Saturday Solopreneur", "https://justinwelsh.me"],
+    ]
+  },
+  {
+    label: "Workflows",
+    color: COLORS["Workflows"],
+    links: [
+      ["Ness Labs",  "https://nesslabs.com"],
+      ["Ben's Bites","https://bensbites.beehiiv.com"],
+    ]
+  },
+  {
+    label: "Bitcoin",
+    color: COLORS["Bitcoin"],
+    links: [
+      ["Bitcoin Magazine",   "https://bitcoinmagazine.com"],
+      ["Proof of Words",     "https://proofofwords.com"],
+      ["CoinDesk The Node",  "https://coindesk.com"],
+    ]
+  },
+  {
+    label: "People Worth Watching",
+    color: COLORS["People Worth Watching"],
+    links: [
+      ["Simon Willison (@simonw)", "https://twitter.com/simonw"],
+      ["Shawn Wang (@swyx)",       "https://twitter.com/swyx"],
+    ]
+  },
+];
+
+/* ── UTILS ───────────────────────────────────────────────────────── */
+function esc(s) {
+  return String(s ?? "")
+    .replace(/&/g,"&amp;").replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function fmtTs(iso) {
+  if (!iso) return "unknown";
+  try {
+    return new Date(iso).toLocaleString("en-US", {
+      month: "short", day: "numeric", year: "numeric",
+      hour: "numeric", minute: "2-digit", hour12: true
+    });
+  } catch { return iso; }
+}
+
+/* ── RENDER ──────────────────────────────────────────────────────── */
+function renderItem(item) {
+  const color = COLORS[item.category] || "#555";
+  const desc  = item.description
+    ? `<div class="item-desc">${esc(item.description)}</div>`
+    : "";
+  return `
+    <div class="item">
+      <div class="item-row1">
+        <span class="cat-label" style="color:${color}">${esc(item.category)}</span>
+        <a class="item-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+          ${esc(item.headline)}
+        </a>
+      </div>
+      <div class="item-meta">
+        ${esc(item.source)}&ensp;<span class="item-score">${item.score}/10</span>
+      </div>
+      ${desc}
+    </div>`;
+}
+
+function renderSources() {
+  document.getElementById("sources-grid").innerHTML = SOURCES.map(cat => `
+    <div>
+      <span class="src-cat-label" style="color:${cat.color}">${esc(cat.label)}</span>
+      <ul class="src-list">
+        ${cat.links.map(([n, u]) =>
+          `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(n)}</a></li>`
+        ).join("")}
+      </ul>
+    </div>
+  `).join("");
+}
+
+function renderFeed(data, isStub) {
+  const sorted = [...(data.items || [])].sort((a, b) => b.score - a.score);
+  const main   = sorted.filter(i => i.score >= 4);
+  const extra  = sorted.filter(i => i.score <  4);
+
+  document.getElementById("headlines-list").innerHTML =
+    main.length
+      ? main.map(renderItem).join("")
+      : `<p style="color:#888;padding:14px 0">No items yet.</p>`;
+
+  const moreItems = document.getElementById("more-items");
+  const moreRow   = document.getElementById("more-row");
+  if (extra.length) {
+    moreItems.innerHTML = extra.map(renderItem).join("");
+    document.getElementById("more-count").textContent = extra.length;
+    moreRow.style.display = "flex";
+  } else {
+    moreRow.style.display = "none";
+  }
+
+  document.getElementById("updated-text").textContent =
+    "Last updated: " + fmtTs(data.updated_at);
+
+  document.getElementById("stub-banner").style.display = isStub ? "block" : "none";
+}
+
+let moreOpen = false;
+function toggleMore() {
+  moreOpen = !moreOpen;
+  const el  = document.getElementById("more-items");
+  const btn = document.getElementById("more-btn");
+  const n   = document.getElementById("more-count").textContent;
+  el.classList.toggle("open", moreOpen);
+  btn.textContent = moreOpen ? "▲ Less" : `▼ More (${n})`;
+}
+
+/* ── LOAD ────────────────────────────────────────────────────────── */
+async function loadFeed() {
+  const btn = document.getElementById("refresh-btn");
+  btn.textContent = "↻ …";
+  btn.disabled    = true;
+
+  try {
+    const res = await fetch(FEED_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    if (!data.items?.length) throw new Error("empty");
+    renderFeed(data, false);
+  } catch {
+    renderFeed(STUB, true);
+    document.getElementById("updated-text").textContent =
+      "Feed unavailable — check back soon";
+  } finally {
+    btn.textContent = "↻ Refresh";
+    btn.disabled    = false;
+  }
+}
+
+/* ── INIT ────────────────────────────────────────────────────────── */
+(function () {
+  document.getElementById("today-date").textContent =
+    new Date().toLocaleDateString("en-US", {
+      weekday: "long", month: "long", day: "numeric", year: "numeric"
+    });
+  renderSources();
+  loadFeed();
+})();
+</script>
+</body>
+</html>
