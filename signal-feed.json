@@ -1,0 +1,49 @@
+{
+  "days": [
+    {
+      "date": "Friday, June 6, 2026",
+      "items": [
+        {
+          "category": "PLATFORM NEWS",
+          "headline": "Anthropic ships Claude 4 with extended thinking and 200K context window",
+          "url": "https://anthropic.com/news",
+          "source": "Anthropic Blog",
+          "score": 9,
+          "summary": "New flagship model adds transparent multi-step reasoning — direct impact on Hermes agent capabilities."
+        },
+        {
+          "category": "AI BUILDERS",
+          "headline": "Simon Willison releases LLM 0.17 with plugin support for local models",
+          "url": "https://simonwillison.net",
+          "source": "Simon Willison's Blog",
+          "score": 9,
+          "summary": "CLI tool now supports Ollama and LM Studio via a unified plugin interface."
+        },
+        {
+          "category": "SMALL BUSINESS",
+          "headline": "Indie founder crosses $10K MRR with AI scheduling tool built in 90 days",
+          "url": "https://indiehackers.com",
+          "source": "Indie Hackers",
+          "score": 8,
+          "summary": "Solo developer details full stack, pricing strategy, and acquisition playbook — relevant comp for UTU."
+        },
+        {
+          "category": "BITCOIN",
+          "headline": "El Salvador expands Bitcoin integration to government supplier payments",
+          "url": "https://bitcoinmagazine.com",
+          "source": "Bitcoin Magazine",
+          "score": 7,
+          "summary": "State contractors can now invoice and receive in BTC directly through the Chivo wallet system."
+        },
+        {
+          "category": "SMALL BUSINESS",
+          "headline": "How Arvid Kahl automated his entire content pipeline with AI agents",
+          "url": "https://thebootstrappedfounder.com",
+          "source": "Bootstrapped Founder",
+          "score": 7,
+          "summary": "Exact tools, prompts, and scheduling system — applies to ChillWave and Saucy workflows."
+        }
+      ]
+    }
+  ]
+}
