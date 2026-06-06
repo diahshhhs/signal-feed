@@ -1,615 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signal Feed — joneslab.dev</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGNAL FEED</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      background: #F5F5F0;
-      color: #1a1a1a;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      font-size: 14px;
-      line-height: 1.5;
-    }
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+}
 
-    /* ── MASTHEAD ──────────────────────────────────────────────── */
-    #masthead {
-      background: #000;
-      color: #fff;
-      padding: 18px 20px 14px;
-      text-align: center;
-      border-bottom: 4px double #fff;
-    }
+/* ── MASTHEAD ──────────────────────────────────────────────── */
+#masthead {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 20px 12px;
+  border-bottom: 3px solid #000;
+}
 
-    #masthead h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(42px, 8vw, 80px);
-      font-weight: 900;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      line-height: 1;
-    }
+#masthead h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 7vw, 72px);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1;
+}
 
-    #masthead-sub {
-      margin-top: 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      font-size: 12px;
-      opacity: 0.72;
-      letter-spacing: 0.06em;
-    }
+#masthead-sub {
+  margin-top: 6px;
+  font-size: 11px;
+  font-family: "Courier New", Courier, monospace;
+  opacity: 0.8;
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
 
-    #masthead-sub .sep {
-      opacity: 0.4;
-    }
+#refresh-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.5);
+  color: #fff;
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 9px;
+  cursor: pointer;
+}
+#refresh-btn:hover { background: rgba(255,255,255,0.15); }
 
-    #refresh-btn {
-      background: transparent;
-      border: 1px solid rgba(255,255,255,0.45);
-      color: #fff;
-      font-size: 10px;
-      font-family: inherit;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 3px 10px;
-      cursor: pointer;
-      border-radius: 2px;
-      transition: background 0.15s;
-    }
+/* ── STUB BANNER ───────────────────────────────────────────── */
+#stub-banner {
+  display: none;
+  background: #fffbe6;
+  border-bottom: 1px solid #c8a000;
+  text-align: center;
+  padding: 5px 12px;
+  font-size: 11px;
+  color: #7a5c00;
+  font-family: "Courier New", monospace;
+}
 
-    #refresh-btn:hover  { background: rgba(255,255,255,0.12); }
-    #refresh-btn:active { background: rgba(255,255,255,0.22); }
-    #refresh-btn:disabled { opacity: 0.5; cursor: default; }
+/* ── THREE-COLUMN LAYOUT ───────────────────────────────────── */
+#page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
-    /* ── LAST UPDATED ──────────────────────────────────────────── */
-    #updated-bar {
-      border-bottom: 1px solid #c8c8c0;
-      background: #F5F5F0;
-    }
+#columns {
+  display: grid;
+  grid-template-columns: 170px 1fr 170px;
+  gap: 0;
+  border-bottom: 2px solid #000;
+}
 
-    #updated-bar .container {
-      display: flex;
-      justify-content: flex-end;
-      padding: 5px 0;
-    }
+@media (max-width: 700px) {
+  #columns { grid-template-columns: 1fr; }
+  #col-left  { order: 2; border-right: none; border-top: 2px solid #000; }
+  #col-right { order: 3; border-left: none;  border-top: 2px solid #000; }
+  #col-center { order: 1; }
+}
 
-    #updated-text {
-      font-size: 11px;
-      color: #777;
-      font-style: italic;
-    }
+/* ── COLUMNS ───────────────────────────────────────────────── */
+#col-left {
+  border-right: 1px solid #000;
+  padding: 12px 10px;
+}
 
-    /* ── STUB BANNER ───────────────────────────────────────────── */
-    #stub-banner {
-      display: none;
-      background: #fdf8e1;
-      border-bottom: 1px solid #d4c44a;
-      text-align: center;
-      padding: 6px 16px;
-      font-size: 12px;
-      color: #7a6800;
-    }
+#col-center {
+  padding: 12px 14px;
+  border-right: 1px solid #000;
+}
 
-    /* ── CONTAINER ─────────────────────────────────────────────── */
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+#col-right {
+  padding: 12px 10px;
+}
 
-    /* ── SECTION HEADERS ───────────────────────────────────────── */
-    .section-head {
-      font-family: Georgia, serif;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #000;
-      border-top: 3px solid #000;
-      border-bottom: 1px solid #000;
-      padding: 5px 0 4px;
-      margin: 20px 0 0;
-    }
+/* ── SECTION HEADERS ───────────────────────────────────────── */
+.sec-head {
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #000;
+  border-bottom: 2px solid #000;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+  margin-top: 14px;
+}
+.sec-head:first-child { margin-top: 0; }
 
-    /* ── HEADLINES ─────────────────────────────────────────────── */
-    #headlines-section { padding-bottom: 4px; }
+/* ── SOURCE LINKS ──────────────────────────────────────────── */
+.src-list { list-style: none; margin-bottom: 4px; }
+.src-list li { margin-bottom: 3px; }
+.src-list a {
+  color: #000080;
+  text-decoration: underline;
+  font-size: 12px;
+  font-family: "Courier New", monospace;
+}
+.src-list a:visited { color: #551a8b; }
+.src-list a:hover   { color: #cc0000; }
 
-    #headlines-list,
-    #more-items { margin-top: 2px; }
+/* ── CENTER — TODAY'S SIGNAL ───────────────────────────────── */
+#center-head {
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 12px;
+  color: #000;
+}
 
-    .item {
-      border-bottom: 1px solid #d8d8d0;
-      padding: 11px 0 10px;
-    }
+/* ── HEADLINE ITEMS ────────────────────────────────────────── */
+.item { padding: 9px 0; border-bottom: 1px solid #ccc; }
+.item:last-child { border-bottom: none; }
 
-    .item:last-child { border-bottom: none; }
+.cat-tag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #cc0000;
+  display: block;
+  margin-bottom: 2px;
+}
 
-    .item-row1 {
-      display: flex;
-      align-items: baseline;
-      gap: 9px;
-      flex-wrap: wrap;
-    }
+.item-link {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #cc0000;
+  text-decoration: underline;
+  display: block;
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+.item-link:visited { color: #551a8b; }
+.item-link:hover   { color: #880000; }
 
-    .cat-label {
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
+.item.top .item-link { font-size: 16px; }
 
-    .item-link {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.25;
-      color: #1a1a1a;
-      text-decoration: none;
-    }
+.item-meta {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 3px;
+  font-family: "Courier New", monospace;
+}
 
-    .item-link:hover { text-decoration: underline; color: #000; }
-    .item-link:visited { color: #5a5a5a; }
+.item-summary {
+  font-size: 12px;
+  color: #000;
+  font-family: "Courier New", monospace;
+  line-height: 1.55;
+}
 
-    .item-meta {
-      margin-top: 3px;
-      font-size: 11px;
-      color: #888;
-    }
-
-    .item-score { color: #bbb; }
-
-    .item-desc {
-      margin-top: 5px;
-      font-size: 13px;
-      color: #4a4a4a;
-      line-height: 1.45;
-    }
-
-    /* ── MORE TOGGLE ───────────────────────────────────────────── */
-    #more-row {
-      display: none;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 0 2px;
-      border-top: 1px solid #d0d0c8;
-    }
-
-    #more-btn {
-      background: none;
-      border: 1px solid #bbb;
-      font-size: 11px;
-      font-family: inherit;
-      color: #555;
-      padding: 3px 12px;
-      cursor: pointer;
-      border-radius: 2px;
-      letter-spacing: 0.04em;
-    }
-
-    #more-btn:hover { background: #eae9e0; }
-
-    #more-items { display: none; }
-    #more-items.open { display: block; }
-
-    /* ── SOURCES ───────────────────────────────────────────────── */
-    #sources-section { padding-bottom: 32px; }
-
-    .sources-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px 36px;
-      padding-top: 16px;
-    }
-
-    @media (max-width: 660px) {
-      .sources-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 420px) {
-      .sources-grid { grid-template-columns: 1fr; }
-    }
-
-    .src-cat-label {
-      display: block;
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      border-bottom: 1px solid currentColor;
-      padding-bottom: 4px;
-      margin-bottom: 7px;
-    }
-
-    .src-list { list-style: none; }
-
-    .src-list li { margin-bottom: 5px; }
-
-    .src-list a {
-      font-size: 12px;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .src-list a:hover { text-decoration: underline; }
-    .src-list a:visited { color: #999; }
-
-    /* ── FOOTER ────────────────────────────────────────────────── */
-    footer {
-      border-top: 1px solid #c8c8c0;
-      text-align: center;
-      padding: 12px 0 16px;
-      font-size: 11px;
-      color: #aaa;
-      letter-spacing: 0.06em;
-    }
-  </style>
+/* ── FOOTER ────────────────────────────────────────────────── */
+footer {
+  border-top: 2px solid #000;
+  text-align: center;
+  padding: 10px 0 14px;
+  font-size: 11px;
+  color: #666;
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+</style>
 </head>
 <body>
 
-<!-- MASTHEAD -->
 <div id="masthead">
   <h1>Signal Feed</h1>
   <div id="masthead-sub">
     <span>feed.joneslab.dev</span>
-    <span class="sep">|</span>
+    <span>|</span>
     <span id="today-date"></span>
-    <span class="sep">|</span>
-    <button id="refresh-btn" onclick="loadFeed()">↻ Refresh</button>
+    <span>|</span>
+    <button id="refresh-btn" onclick="loadFeed()">&#8635; Refresh</button>
   </div>
 </div>
 
-<!-- LAST UPDATED -->
-<div id="updated-bar">
-  <div class="container">
-    <span id="updated-text">Loading…</span>
-  </div>
-</div>
+<div id="stub-banner">Showing sample data &#8212; live feed connects tomorrow</div>
 
-<!-- STUB BANNER -->
-<div id="stub-banner">Showing sample data — live feed connects tomorrow</div>
+<div id="page">
+  <div id="columns">
 
-<div class="container">
+    <div id="col-left">
+      <div class="sec-head">AI &amp; Builders</div>
+      <ul class="src-list">
+        <li><a href="https://bensbites.beehiiv.com" target="_blank" rel="noopener">Ben&#39;s Bites</a></li>
+        <li><a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR AI</a></li>
+        <li><a href="https://simonwillison.net" target="_blank" rel="noopener">Simon Willison&#39;s Blog</a></li>
+        <li><a href="https://news.ycombinator.com" target="_blank" rel="noopener">Hacker News</a></li>
+        <li><a href="https://therundown.ai" target="_blank" rel="noopener">The Rundown AI</a></li>
+        <li><a href="https://aichatdaily.com" target="_blank" rel="noopener">AI Chat Daily</a></li>
+        <li><a href="https://producthunt.com" target="_blank" rel="noopener">Product Hunt</a></li>
+      </ul>
 
-  <!-- HEADLINES -->
-  <section id="headlines-section">
-    <div class="section-head">Today's Signal</div>
-    <div id="headlines-list"></div>
-    <div id="more-row">
-      <button id="more-btn" onclick="toggleMore()">▼ More (<span id="more-count">0</span>)</button>
+      <div class="sec-head">Platform News</div>
+      <ul class="src-list">
+        <li><a href="https://anthropic.com/news" target="_blank" rel="noopener">Anthropic</a></li>
+        <li><a href="https://openai.com/news" target="_blank" rel="noopener">OpenAI</a></li>
+        <li><a href="https://deepmind.google/discover/blog" target="_blank" rel="noopener">Google DeepMind</a></li>
+        <li><a href="https://blog.google/technology/ai" target="_blank" rel="noopener">Google AI Blog</a></li>
+        <li><a href="https://ai.meta.com/blog" target="_blank" rel="noopener">Meta AI</a></li>
+        <li><a href="https://mistral.ai/news" target="_blank" rel="noopener">Mistral</a></li>
+        <li><a href="https://huggingface.co/blog" target="_blank" rel="noopener">Hugging Face</a></li>
+      </ul>
+
+      <div class="sec-head">People Watching</div>
+      <ul class="src-list">
+        <li><a href="https://twitter.com/simonw" target="_blank" rel="noopener">@simonw</a></li>
+        <li><a href="https://twitter.com/swyx" target="_blank" rel="noopener">@swyx</a></li>
+      </ul>
     </div>
-    <div id="more-items"></div>
-  </section>
 
-  <!-- SOURCES -->
-  <section id="sources-section">
-    <div class="section-head">Sources</div>
-    <div class="sources-grid" id="sources-grid"></div>
-  </section>
+    <div id="col-center">
+      <div id="center-head">Today&#39;s Signal</div>
+      <div id="headlines-list"></div>
+    </div>
 
+    <div id="col-right">
+      <div class="sec-head">Small Business</div>
+      <ul class="src-list">
+        <li><a href="https://indiehackers.com" target="_blank" rel="noopener">Indie Hackers</a></li>
+        <li><a href="https://thebootstrappedfounder.com" target="_blank" rel="noopener">Bootstrapped Founder</a></li>
+        <li><a href="https://thehustle.co" target="_blank" rel="noopener">The Hustle</a></li>
+        <li><a href="https://justinwelsh.me" target="_blank" rel="noopener">Saturday Solopreneur</a></li>
+        <li><a href="https://nesslabs.com" target="_blank" rel="noopener">Ness Labs</a></li>
+      </ul>
+
+      <div class="sec-head">Bitcoin</div>
+      <ul class="src-list">
+        <li><a href="https://bitcoinmagazine.com" target="_blank" rel="noopener">Bitcoin Magazine</a></li>
+        <li><a href="https://proofofwords.com" target="_blank" rel="noopener">Proof of Words</a></li>
+        <li><a href="https://coindesk.com" target="_blank" rel="noopener">CoinDesk &#8212; The Node</a></li>
+      </ul>
+
+      <div class="sec-head">Workflows</div>
+      <ul class="src-list">
+        <li><a href="https://bensbites.beehiiv.com" target="_blank" rel="noopener">Ben&#39;s Bites</a></li>
+        <li><a href="https://justinwelsh.me" target="_blank" rel="noopener">Saturday Solopreneur</a></li>
+      </ul>
+
+      <div class="sec-head">Morning Podcast</div>
+      <ul class="src-list">
+        <li><a href="https://podcastintelligence.joneslab.dev" target="_blank" rel="noopener">&#9654; Latest Episode</a></li>
+      </ul>
+    </div>
+
+  </div>
 </div>
 
-<footer>Signal Feed — joneslab.dev</footer>
+<footer>Signal Feed &nbsp;|&nbsp; Powered by Hermes &nbsp;|&nbsp; joneslab.dev</footer>
 
 <script>
-/* ── CONFIG ──────────────────────────────────────────────────────── */
-const FEED_URL = "PLACEHOLDER_BLOB_URL/signal-feed.json";
+const FEED_URL = './signal-feed.json';
 
-const COLORS = {
-  "AI Builders":           "#1a3a5c",
-  "Small Business":        "#2d5a27",
-  "Workflows":             "#4a3a6b",
-  "Bitcoin":               "#b8620a",
-  "Platform News":         "#8b1a1a",
-  "People Worth Watching": "#555555",
-};
-
-/* ── STUB DATA ───────────────────────────────────────────────────── */
 const STUB = {
-  updated_at: new Date().toISOString(),
   items: [
-    {
-      headline: "Anthropic ships Claude 4 with extended thinking and 200K context window",
-      url: "https://anthropic.com/news",
-      source: "Anthropic Blog",
-      category: "Platform News",
-      score: 9,
-      description: "New flagship model adds transparent multi-step reasoning and doubles the previous context limit — direct impact on Hermes agent capabilities."
-    },
-    {
-      headline: "Simon Willison releases LLM 0.17 with plugin support for local models",
-      url: "https://simonwillison.net",
-      source: "Simon Willison's Blog",
-      category: "AI Builders",
-      score: 9,
-      description: "The CLI tool now supports Ollama and LM Studio via a unified plugin interface — runnable on any machine, offline, no API keys."
-    },
-    {
-      headline: "Indie founder crosses $10K MRR with AI scheduling tool built in 90 days",
-      url: "https://indiehackers.com",
-      source: "Indie Hackers",
-      category: "Small Business",
-      score: 8,
-      description: "Solo developer Ben Hoang details the full stack, pricing strategy, and customer acquisition playbook — relevant comp for UTU."
-    },
-    {
-      headline: "OpenAI rolls out GPT-4o canvas editing to all Plus users",
-      url: "https://openai.com/news",
-      source: "OpenAI Blog",
-      category: "Platform News",
-      score: 8,
-      description: "Document editing within the chat interface goes GA without switching to a separate tool."
-    },
-    {
-      headline: "Hugging Face releases SmolVLM-2: a 2B vision model that runs on a laptop",
-      url: "https://huggingface.co/blog",
-      source: "Hugging Face Blog",
-      category: "AI Builders",
-      score: 8,
-      description: "Benchmarks within 3% of GPT-4V on visual reasoning tasks, weights fully open."
-    },
-    {
-      headline: "El Salvador expands Bitcoin integration to government supplier payments",
-      url: "https://bitcoinmagazine.com",
-      source: "Bitcoin Magazine",
-      category: "Bitcoin",
-      score: 7,
-      description: "State contractors can now invoice and receive in BTC directly through the Chivo wallet system."
-    },
-    {
-      headline: "How Arvid Kahl automated his entire content pipeline with AI agents",
-      url: "https://thebootstrappedfounder.com",
-      source: "Bootstrapped Founder",
-      category: "Small Business",
-      score: 7,
-      description: "Exact tools, prompts, and scheduling system to run The Bootstrapped Founder at scale — applies to ChillWave and Saucy workflows."
-    },
-    {
-      headline: "Notion AI summarizer workflow that actually gets used",
-      url: "https://nesslabs.com",
-      source: "Ness Labs",
-      category: "Workflows",
-      score: 7,
-      description: "Structured template uses Claude to digest meeting notes and surface only the decisions that need action."
-    },
-    {
-      headline: "Google DeepMind releases Gemini 1.6 Flash with sub-300ms API response times",
-      url: "https://deepmind.google/discover/blog",
-      source: "Google DeepMind",
-      category: "Platform News",
-      score: 7,
-      description: "New Flash tier targets production apps that need real-time inference without paying for Pro-tier compute."
-    },
-    {
-      headline: "Mistral releases Codestral 2.0 with 128K context and function calling",
-      url: "https://mistral.ai/news",
-      source: "Mistral",
-      category: "AI Builders",
-      score: 6,
-      description: "Open-weights code model matches GPT-4 Turbo on HumanEval while running on a single A100."
-    },
-    {
-      headline: "The exact pre-sell SOP Justin Welsh uses before building anything",
-      url: "https://justinwelsh.me",
-      source: "Saturday Solopreneur",
-      category: "Small Business",
-      score: 6,
-      description: "Repeatable framework that validates audience before writing a single line of code or content."
-    },
-    {
-      headline: "HN thread: replacing Zapier with n8n + Claude for $0/month",
-      url: "https://news.ycombinator.com",
-      source: "Hacker News",
-      category: "Workflows",
-      score: 6,
-      description: "Solo operator documents swapping a $500/month Zapier plan for a self-hosted n8n instance with AI routing."
-    },
-    {
-      headline: "Nike begins accepting Bitcoin for limited-release drops via BitPay",
-      url: "https://bitcoinmagazine.com",
-      source: "Bitcoin Magazine",
-      category: "Bitcoin",
-      score: 5,
-      description: "Rollout starts with SNKRS app in the US, expanding to EU by Q3."
-    },
-    {
-      headline: "Meta releases Llama 3.2 Vision: open multimodal with 11B and 90B variants",
-      url: "https://ai.meta.com/blog",
-      source: "Meta AI",
-      category: "AI Builders",
-      score: 5,
-      description: "Both variants are fully open-weight and optimized for on-device inference on Qualcomm hardware."
-    }
+    { category:"PLATFORM NEWS", headline:"Anthropic ships Claude 4 with extended thinking and 200K context window", url:"https://anthropic.com/news", source:"Anthropic Blog", score:9, summary:"New flagship model adds transparent multi-step reasoning — direct impact on Hermes agent capabilities." },
+    { category:"AI BUILDERS", headline:"Simon Willison releases LLM 0.17 with plugin support for local models", url:"https://simonwillison.net", source:"Simon Willison's Blog", score:9, summary:"CLI tool now supports Ollama and LM Studio via a unified plugin interface." },
+    { category:"SMALL BUSINESS", headline:"Indie founder crosses $10K MRR with AI scheduling tool built in 90 days", url:"https://indiehackers.com", source:"Indie Hackers", score:8, summary:"Solo developer details full stack, pricing strategy, and acquisition playbook — relevant comp for UTU." },
+    { category:"BITCOIN", headline:"El Salvador expands Bitcoin integration to government supplier payments", url:"https://bitcoinmagazine.com", source:"Bitcoin Magazine", score:7, summary:"State contractors can now invoice and receive in BTC directly through the Chivo wallet system." },
+    { category:"SMALL BUSINESS", headline:"How Arvid Kahl automated his entire content pipeline with AI agents", url:"https://thebootstrappedfounder.com", source:"Bootstrapped Founder", score:7, summary:"Exact tools, prompts, and scheduling system — applies to ChillWave and Saucy workflows." }
   ]
 };
 
-/* ── SOURCES ─────────────────────────────────────────────────────── */
-const SOURCES = [
-  {
-    label: "AI Builders",
-    color: COLORS["AI Builders"],
-    links: [
-      ["Simon Willison's Blog", "https://simonwillison.net"],
-      ["Ben's Bites",           "https://bensbites.beehiiv.com"],
-      ["TLDR AI",               "https://tldr.tech/ai"],
-      ["Hacker News",           "https://news.ycombinator.com"],
-      ["Hugging Face Blog",     "https://huggingface.co/blog"],
-      ["Product Hunt",          "https://producthunt.com"],
-    ]
-  },
-  {
-    label: "Platform News",
-    color: COLORS["Platform News"],
-    links: [
-      ["Anthropic",        "https://anthropic.com/news"],
-      ["OpenAI",           "https://openai.com/news"],
-      ["Google DeepMind",  "https://deepmind.google/discover/blog"],
-      ["Google AI",        "https://blog.google/technology/ai"],
-      ["Meta AI",          "https://ai.meta.com/blog"],
-      ["Mistral",          "https://mistral.ai/news"],
-    ]
-  },
-  {
-    label: "Small Business",
-    color: COLORS["Small Business"],
-    links: [
-      ["Indie Hackers",        "https://indiehackers.com"],
-      ["Bootstrapped Founder", "https://thebootstrappedfounder.com"],
-      ["The Hustle",           "https://thehustle.co"],
-      ["Saturday Solopreneur", "https://justinwelsh.me"],
-    ]
-  },
-  {
-    label: "Workflows",
-    color: COLORS["Workflows"],
-    links: [
-      ["Ness Labs",  "https://nesslabs.com"],
-      ["Ben's Bites","https://bensbites.beehiiv.com"],
-    ]
-  },
-  {
-    label: "Bitcoin",
-    color: COLORS["Bitcoin"],
-    links: [
-      ["Bitcoin Magazine",   "https://bitcoinmagazine.com"],
-      ["Proof of Words",     "https://proofofwords.com"],
-      ["CoinDesk The Node",  "https://coindesk.com"],
-    ]
-  },
-  {
-    label: "People Worth Watching",
-    color: COLORS["People Worth Watching"],
-    links: [
-      ["Simon Willison (@simonw)", "https://twitter.com/simonw"],
-      ["Shawn Wang (@swyx)",       "https://twitter.com/swyx"],
-    ]
-  },
-];
-
-/* ── UTILS ───────────────────────────────────────────────────────── */
 function esc(s) {
-  return String(s ?? "")
-    .replace(/&/g,"&amp;").replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function fmtTs(iso) {
-  if (!iso) return "unknown";
-  try {
-    return new Date(iso).toLocaleString("en-US", {
-      month: "short", day: "numeric", year: "numeric",
-      hour: "numeric", minute: "2-digit", hour12: true
-    });
-  } catch { return iso; }
-}
-
-/* ── RENDER ──────────────────────────────────────────────────────── */
-function renderItem(item) {
-  const color = COLORS[item.category] || "#555";
-  const desc  = item.description
-    ? `<div class="item-desc">${esc(item.description)}</div>`
-    : "";
-  return `
-    <div class="item">
-      <div class="item-row1">
-        <span class="cat-label" style="color:${color}">${esc(item.category)}</span>
-        <a class="item-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
-          ${esc(item.headline)}
-        </a>
-      </div>
-      <div class="item-meta">
-        ${esc(item.source)}&ensp;<span class="item-score">${item.score}/10</span>
-      </div>
-      ${desc}
-    </div>`;
-}
-
-function renderSources() {
-  document.getElementById("sources-grid").innerHTML = SOURCES.map(cat => `
-    <div>
-      <span class="src-cat-label" style="color:${cat.color}">${esc(cat.label)}</span>
-      <ul class="src-list">
-        ${cat.links.map(([n, u]) =>
-          `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(n)}</a></li>`
-        ).join("")}
-      </ul>
-    </div>
-  `).join("");
+function renderItems(items) {
+  return [...items].sort((a,b) => b.score - a.score).map((item, i) =>
+    `<div class="item${i < 3 ? ' top' : ''}">
+      <span class="cat-tag">${esc(item.category)}</span>
+      <a class="item-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.headline)}</a>
+      <div class="item-meta">${esc(item.source)} &nbsp; ${item.score}/10</div>
+      ${item.summary ? `<div class="item-summary">${esc(item.summary)}</div>` : ''}
+    </div>`
+  ).join('');
 }
 
 function renderFeed(data, isStub) {
-  const sorted = [...(data.items || [])].sort((a, b) => b.score - a.score);
-  const main   = sorted.filter(i => i.score >= 4);
-  const extra  = sorted.filter(i => i.score <  4);
-
-  document.getElementById("headlines-list").innerHTML =
-    main.length
-      ? main.map(renderItem).join("")
-      : `<p style="color:#888;padding:14px 0">No items yet.</p>`;
-
-  const moreItems = document.getElementById("more-items");
-  const moreRow   = document.getElementById("more-row");
-  if (extra.length) {
-    moreItems.innerHTML = extra.map(renderItem).join("");
-    document.getElementById("more-count").textContent = extra.length;
-    moreRow.style.display = "flex";
-  } else {
-    moreRow.style.display = "none";
-  }
-
-  document.getElementById("updated-text").textContent =
-    "Last updated: " + fmtTs(data.updated_at);
-
-  document.getElementById("stub-banner").style.display = isStub ? "block" : "none";
+  document.getElementById('headlines-list').innerHTML = renderItems(data.items || []);
+  document.getElementById('stub-banner').style.display = isStub ? 'block' : 'none';
 }
 
-let moreOpen = false;
-function toggleMore() {
-  moreOpen = !moreOpen;
-  const el  = document.getElementById("more-items");
-  const btn = document.getElementById("more-btn");
-  const n   = document.getElementById("more-count").textContent;
-  el.classList.toggle("open", moreOpen);
-  btn.textContent = moreOpen ? "▲ Less" : `▼ More (${n})`;
-}
-
-/* ── LOAD ────────────────────────────────────────────────────────── */
 async function loadFeed() {
-  const btn = document.getElementById("refresh-btn");
-  btn.textContent = "↻ …";
-  btn.disabled    = true;
-
+  const btn = document.getElementById('refresh-btn');
+  btn.textContent = '...';
+  btn.disabled = true;
   try {
-    const res = await fetch(FEED_URL, { cache: "no-store" });
-    if (!res.ok) throw new Error("HTTP " + res.status);
+    const res = await fetch(FEED_URL + '?t=' + Date.now());
+    if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
-    if (!data.items?.length) throw new Error("empty");
+    if (!data.items?.length) throw new Error('empty');
     renderFeed(data, false);
   } catch {
     renderFeed(STUB, true);
-    document.getElementById("updated-text").textContent =
-      "Feed unavailable — check back soon";
   } finally {
-    btn.textContent = "↻ Refresh";
-    btn.disabled    = false;
+    btn.innerHTML = '&#8635; Refresh';
+    btn.disabled = false;
   }
 }
 
-/* ── INIT ────────────────────────────────────────────────────────── */
-(function () {
-  document.getElementById("today-date").textContent =
-    new Date().toLocaleDateString("en-US", {
-      weekday: "long", month: "long", day: "numeric", year: "numeric"
-    });
-  renderSources();
-  loadFeed();
-})();
+document.getElementById('today-date').textContent =
+  new Date().toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+
+loadFeed();
 </script>
 </body>
 </html>
