@@ -4,36 +4,60 @@
       "date": "Monday, June 8, 2026",
       "items": [
         {
-          "headline": "Build tools, to build more",
-          "url": "https://www.bensbites.com/p/build-tools-to-build-more",
-          "source": "Ben's Bites",
-          "score": 7,
+          "headline": "AI Liability: The Landmines Under Your SaaS",
+          "url": "https://thebootstrappedfounder.com/ai-liability-the-landmines-under-your-saas/",
+          "source": "Bootstrapped Founder",
+          "score": 9,
           "category": "AI BUILDERS",
-          "summary": "This article discusses the importance of building tools to enhance productivity and create more, which is directly applicable to David's various ventures."
-        },
-        {
-          "headline": "Opus 4.8",
-          "url": "https://www.bensbites.com/p/opus-48",
-          "source": "Ben's Bites",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Anthropic's Opus 4.8 release is a significant update to a core AI model that could impact David's Hermes AI agent."
+          "summary": "The article explores AI liability and potential legal landmines for SaaS businesses, directly applicable to UTU and Hermes."
         },
         {
           "headline": "Can I get my agents on the phone?",
           "url": "https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone",
           "source": "Ben's Bites",
-          "score": 7,
+          "score": 8,
           "category": "AI BUILDERS",
-          "summary": "The article explores the capability of AI agents to handle phone interactions, which is relevant for enhancing David's Hermes AI agent."
+          "summary": "The article explores the possibility of getting AI agents on the phone, directly applicable to enhancing the communication capabilities of David's Hermes AI agent."
         },
         {
           "headline": "Agents feedback tip",
           "url": "https://www.bensbites.com/p/agents-feedback-tip",
           "source": "Ben's Bites",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "The article provides a tip for agents' feedback, which is directly applicable to improving the performance and interaction of David's Hermes AI agent."
+        },
+        {
+          "headline": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+          "url": "https://huggingface.co/blog/hf-cli-for-agents",
+          "source": "Hugging Face Blog",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "Designing the hf CLI as an agent-optimized way to work with the Hub is directly applicable to improving the workflow and tool integration for David's Hermes AI agent."
+        },
+        {
+          "headline": "How to Actually Use Claude Code to Build Serious Software",
+          "url": "https://thebootstrappedfounder.com/how-to-actually-use-claude-code-to-build-serious-software/",
+          "source": "Bootstrapped Founder",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "The article provides actionable insights on using Claude Code for serious software development, directly applicable to Hermes and UTU."
+        },
+        {
+          "headline": "Inside Nathan's Second Brain: Daniel Miessler, Security Expert & Creator of PAI, Audits My AI Setup",
+          "url": "https://www.cognitiverevolution.ai/inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup/",
+          "source": "The Cognitive Revolution",
+          "score": 8,
+          "category": "WORKFLOWS",
+          "summary": "Daniel Miessler audits an AI setup, offering insights into personal AI agent optimization directly applicable to Hermes."
+        },
+        {
+          "headline": "Build tools, to build more",
+          "url": "https://www.bensbites.com/p/build-tools-to-build-more",
+          "source": "Ben's Bites",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "This tip on agents' feedback provides actionable insights for improving the performance and development of David's Hermes AI agent."
+          "summary": "The article discusses the importance of building tools to enhance AI agent capabilities and workflows, which is directly applicable to David's Hermes AI agent."
         },
         {
           "headline": "datasette-agent-edit 0.1a0",
@@ -41,39 +65,7 @@
           "source": "Simon Willison's Blog",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "The release of datasette-agent-edit 0.1a0 is a new tool for working with data and agents, potentially useful for Hermes or Saucy Investors Club."
-        },
-        {
-          "headline": "micropython-wasm 0.1a2",
-          "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
-          "source": "Simon Willison's Blog",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "The release of micropython-wasm 0.1a2 offers a new technology for running Python code in a lightweight environment, potentially useful for David's AI projects."
-        },
-        {
-          "headline": "Running Python code in a sandbox with MicroPython and WASM",
-          "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
-          "source": "Simon Willison's Blog",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "This article details running Python code in a sandbox with MicroPython and WASM, which could be a valuable workflow for secure and efficient AI development for Hermes."
-        },
-        {
-          "headline": "OpenAI Help: Lockdown Mode",
-          "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
-          "source": "Simon Willison's Blog",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "OpenAI's 'Lockdown Mode' is a security feature that could be important for the operational integrity of David's Hermes AI agent."
-        },
-        {
-          "headline": "FrontierCode",
-          "url": "https://cognition.ai/blog/frontier-code",
-          "source": "Hacker News",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "FrontierCode from Cognition AI is a new development in AI coding, directly relevant to the capabilities and development of David's Hermes AI agent."
+          "summary": "datasette-agent-edit 0.1a0 is a new tool for AI agents, potentially useful for David's Hermes AI agent."
         },
         {
           "headline": "The Open Source Community is backing OpenEnv for Agentic RL",
@@ -81,39 +73,7 @@
           "source": "Hugging Face Blog",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "The open-source community backing OpenEnv for Agentic RL is a significant development in AI agent technology, directly applicable to Hermes."
-        },
-        {
-          "headline": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
-          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-          "source": "Hugging Face Blog",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "Nemotron 3.5 Content Safety offers customizable multimodal safety for enterprise AI, which is relevant for ensuring ethical and secure operation of Hermes."
-        },
-        {
-          "headline": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
-          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
-          "source": "Hugging Face Blog",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "EVA-Bench Data 2.0 provides a comprehensive benchmark for AI tools across multiple domains, useful for evaluating and improving Hermes."
-        },
-        {
-          "headline": "Designing the hf CLI as an agent-optimized way to work with the Hub",
-          "url": "https://huggingface.co/blog/hf-cli-for-agents",
-          "source": "Hugging Face Blog",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "Designing the hf CLI as an agent-optimized way to work with the Hub is a workflow improvement for AI development that could benefit Hermes."
-        },
-        {
-          "headline": "Direct Preference Optimization Beyond Chatbots",
-          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
-          "source": "Hugging Face Blog",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "Direct Preference Optimization Beyond Chatbots indicates advancements in AI training methods that could be applied to improve Hermes's performance."
+          "summary": "The open-source community backing OpenEnv for Agentic RL is directly applicable to the development and capabilities of David's Hermes AI agent."
         },
         {
           "headline": "Holo3.1: Fast & Local Computer Use Agents",
@@ -121,15 +81,7 @@
           "source": "Hugging Face Blog",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "Holo3.1 offers fast and local computer use agents, which could be a valuable technology for enhancing the efficiency and responsiveness of Hermes."
-        },
-        {
-          "headline": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-          "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-          "source": "Hugging Face Blog",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "The introduction of Mellum2, a 12B Mixture-of-Experts Model by JetBrains, is a new open-source model that could be integrated into or inspire improvements for Hermes."
+          "summary": "Holo3.1: Fast & Local Computer Use Agents is directly applicable to the development of efficient and localized capabilities for David's Hermes AI agent."
         },
         {
           "headline": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
@@ -137,7 +89,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "News of OpenAI's government stake, Google's compute deal, and Microsoft's Scout launch are significant platform updates affecting the AI ecosystem relevant to Hermes."
+          "summary": "OpenAI is reportedly in talks for a government stake, while Google secured a major compute deal and Microsoft launched Scout."
         },
         {
           "headline": "Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀",
@@ -145,15 +97,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Leaked information about Anthropic Oceanus and ChatGPT Dreaming, along with recursive self-improvement, are key AI platform developments relevant to Hermes."
-        },
-        {
-          "headline": "DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖",
-          "url": "https://tldr.tech/ai/2026-06-04",
-          "source": "TLDR AI",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Meta's model delays and the release of Gemma 4 12B are important updates in the AI model landscape that could affect David's AI strategy for Hermes."
+          "summary": "Anthropic's Oceanus model details leaked, ChatGPT is exploring a 'Dreaming' feature, and recursive self-improvement in AI is being discussed."
         },
         {
           "headline": "Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸",
@@ -161,7 +105,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "News about Codex Sites, Microsoft models, and Anthropic's cost backlash are relevant platform updates for David's AI development and cost considerations for Hermes."
+          "summary": "Codex Sites launched, Microsoft released new models, and Anthropic faced backlash over pricing."
         },
         {
           "headline": "Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍",
@@ -169,7 +113,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Anthropic's IPO filing, OpenAI on AWS, and Perplexity's search code are significant platform and business developments in the AI space."
+          "summary": "Anthropic is reportedly preparing for an IPO, OpenAI is expanding its use of AWS, and Perplexity released its search code."
         },
         {
           "headline": "Copilot super app leaks 🤖, Minimax M3 ➕, Nvidia N1X ⚡️",
@@ -177,7 +121,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Leaked information about Copilot super app, Minimax M3, and Nvidia N1X are important platform updates that could influence David's AI tools and infrastructure."
+          "summary": "Leaks suggest a Copilot super app, Minimax released M3, and Nvidia announced N1X."
         },
         {
           "headline": "Opus 4.8 🧠, Anthropic at $965B 💰, Microsoft’s coding model 👨‍💻",
@@ -185,7 +129,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Opus 4.8 release and Microsoft's coding model are direct platform news items that could impact the development and capabilities of Hermes."
+          "summary": "Opus 4.8 was released, Anthropic's valuation reached $965B, and Microsoft unveiled a new coding model."
         },
         {
           "headline": "OpenAI private MCP 🤖, Cognition $26B valuation 💰, ElevenLabs Music v2 🎵",
@@ -193,95 +137,39 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "OpenAI's private MCP and ElevenLabs Music v2 are platform updates that could offer new functionalities or integrations for Hermes."
+          "summary": "OpenAI is developing a private MCP, Cognition reached a $26B valuation, and ElevenLabs released Music v2."
         },
         {
-          "headline": "AI Liability: The Landmines Under Your SaaS",
-          "url": "https://thebootstrappedfounder.com/ai-liability-the-landmines-under-your-saas/",
-          "source": "Bootstrapped Founder",
-          "score": 7,
-          "category": "SMALL BUSINESS",
-          "summary": "The discussion on AI liability for SaaS products is directly relevant to UTU and Hermes, providing crucial risk management insights."
-        },
-        {
-          "headline": "How to Actually Use Claude Code to Build Serious Software",
-          "url": "https://thebootstrappedfounder.com/how-to-actually-use-claude-code-to-build-serious-software/",
-          "source": "Bootstrapped Founder",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "This guide on how to use Claude Code to build serious software offers practical advice for developing and improving David's Hermes AI agent."
-        },
-        {
-          "headline": "Inside Nathan's Second Brain: Daniel Miessler, Security Expert & Creator of PAI, Audits My AI Setup",
-          "url": "https://www.cognitiverevolution.ai/inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup/",
+          "headline": "Nested Learning: Ali Behrouz on the Quest for Continual Learning & Illusion of AI Architectures",
+          "url": "https://www.cognitiverevolution.ai/nested-learning-ali-behrouz-on-the-quest-for-continual-learning-illusion-of-ai-architectures/",
           "source": "The Cognitive Revolution",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "An audit of an AI setup by a security expert provides valuable insights into securing and optimizing David's Hermes AI agent."
+          "summary": "Ali Behrouz discusses continual learning and the illusion of AI architectures, relevant for understanding AI development for Hermes."
         },
         {
-          "headline": "How Gary Vee runs 7 businesses",
-          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS4508224057.mp3",
-          "source": "My First Million",
-          "score": 7,
-          "category": "SMALL BUSINESS",
-          "summary": "Gary Vee's approach to running 7 businesses offers actionable insights into managing multiple ventures like David's."
-        },
-        {
-          "headline": "Tenable Partners with Anthropic to Advance AI-Driven Cyber Exposure Management - TechAfrica News",
-          "url": "https://techafricanews.com/2026/06/08/tenable-partners-with-anthropic-to-advance-ai-driven-cyber-exposure-management/",
-          "source": "Anthropic",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Tenable partnering with Anthropic to advance AI-driven cyber exposure management highlights a significant application of Anthropic's models, relevant to Hermes."
-        },
-        {
-          "headline": "Anthropic Doubles Claude Cowork Usage Limits | Let's Data Science",
-          "url": "https://letsdatascience.com/news/anthropic-doubles-claude-cowork-usage-limits-db601c73",
-          "source": "Anthropic",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Anthropic doubling Claude Cowork usage limits is a direct platform update that could impact David's use of Claude for Hermes."
-        },
-        {
-          "headline": "LG CNS Adopts Anthropic's Claude, Plans Phased Group-Wide Rollout - Seoul Economic Daily",
-          "url": "https://en.sedaily.com/technology/2026/06/09/lg-cns-adopts-anthropics-claude-plans-phased-group-wide",
-          "source": "Anthropic",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "LG CNS adopting Anthropic's Claude for a phased group-wide rollout demonstrates significant enterprise adoption of Anthropic's AI, relevant to Hermes."
-        },
-        {
-          "headline": "Gemini 3.5 — Google DeepMind",
-          "url": "https://deepmind.google/models/gemini/",
-          "source": "Google DeepMind",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Google DeepMind's Gemini 3.5 release is a major update to a core AI model that could impact David's Hermes AI agent."
-        },
-        {
-          "headline": "Microsoft is making OpenAI optional inside its AI stack - Startup Fortune",
-          "url": "https://startupfortune.com/microsoft-is-making-openai-optional-inside-its-ai-stack/",
-          "source": "Mistral",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Microsoft making OpenAI optional in its AI stack indicates a shift in platform strategy that could affect David's choices for Hermes."
-        },
-        {
-          "headline": "Kiro: Bring engineering rigor to agentic development",
-          "url": "https://kiro.dev/",
-          "source": "AI Builders",
+          "headline": "All Compute Is Food: Palisade's Jeffrey Ladish on AI Shutdown Resistance, Self-Replication & Ecology",
+          "url": "https://www.cognitiverevolution.ai/all-compute-is-food-palisade-s-jeffrey-ladish-on-ai-shutdown-resistance-self-replication-ecology/",
+          "source": "The Cognitive Revolution",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "Kiro aims to bring engineering rigor to agentic development, which is directly applicable to improving the robustness and reliability of David's Hermes AI agent."
+          "summary": "Jeffrey Ladish discusses AI shutdown resistance, self-replication, and ecology, providing a deeper understanding of AI systems for Hermes."
         },
         {
-          "headline": "AI dev tool power rankings & comparison [June 2026] - LogRocket Blog",
-          "url": "https://blog.logrocket.com/ai-dev-tool-power-rankings/",
-          "source": "AI Builders",
+          "headline": "The Model Eats the Scaffolding: DeepMind's Logan Kilpatrick & Tulsee Doshi on 3.5 Flash, Omni & More",
+          "url": "https://www.cognitiverevolution.ai/the-model-eats-the-scaffolding-deepmind-s-logan-kilpatrick-tulsee-doshi-on-3-5-flash-omni-more/",
+          "source": "The Cognitive Revolution",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Logan Kilpatrick and Tulsee Doshi discuss DeepMind's 3.5 Flash, Omni, and other developments, relevant for understanding platform changes."
+        },
+        {
+          "headline": "Anthropic's Digital God, Pope vs AI, Job Loss Narrative Flips, Open Source Crackdown Coming?",
+          "url": "https://allinchamathjason.libsyn.com/pope-vs-ai-anthropics-digital-god-ai-job-loss-narrative-flips-open-source-crackdown-coming",
+          "source": "All-In Podcast",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "AI dev tool power rankings and comparison offer valuable information for selecting and utilizing tools for Hermes development."
+          "summary": "The episode discusses Anthropic's 'Digital God' concept, the impact of AI on jobs, and potential open-source crackdowns, relevant for Hermes and the broader AI landscape."
         },
         {
           "headline": "I signed up for another SaaS",
@@ -289,7 +177,7 @@
           "source": "Ben's Bites",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The author's experience signing up for another SaaS provides insights into customer acquisition and product value for David's UTU SaaS."
+          "summary": "The author signed up for another SaaS, providing a small business angle on SaaS adoption and potential insights for UTU."
         },
         {
           "headline": "Is SaaS dead?",
@@ -297,7 +185,7 @@
           "source": "Ben's Bites",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The discussion on whether SaaS is dead offers valuable perspective for David's UTU business model and market strategy."
+          "summary": "The article questions if SaaS is dead, offering a relevant discussion for David's UTU SaaS business."
         },
         {
           "headline": "Learn the system",
@@ -305,7 +193,31 @@
           "source": "Ben's Bites",
           "score": 6,
           "category": "WORKFLOWS",
-          "summary": "The advice to 'learn the system' is a general workflow principle applicable to optimizing operations across all of David's businesses."
+          "summary": "The article emphasizes learning the system, offering a general workflow insight applicable to David's various ventures."
+        },
+        {
+          "headline": "micropython-wasm 0.1a2",
+          "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "micropython-wasm 0.1a2 is a new development in running Python code in a sandbox, which could be relevant for secure AI agent operations."
+        },
+        {
+          "headline": "Running Python code in a sandbox with MicroPython and WASM",
+          "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Running Python code in a sandbox with MicroPython and WASM offers insights into secure execution environments for AI agents."
+        },
+        {
+          "headline": "OpenAI Help: Lockdown Mode",
+          "url": "https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 6,
+          "category": "PLATFORM NEWS",
+          "summary": "OpenAI Help: Lockdown Mode suggests new security features from OpenAI, relevant for David's use of AI platforms for Hermes."
         },
         {
           "headline": "Show HN: Mach – A compiled systems language looking for contributions",
@@ -313,7 +225,7 @@
           "source": "Hacker News",
           "score": 6,
           "category": "AI BUILDERS",
-          "summary": "Mach, a compiled systems language, could be a relevant tool for David or his team if they are looking into low-level performance optimization for any of his applications."
+          "summary": "Mach is a compiled systems language looking for contributions, which could be relevant for David's development work or Hermes."
         },
         {
           "headline": "Apple bets cheaper AI will woo small developers",
@@ -321,15 +233,23 @@
           "source": "Hacker News",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "Apple's strategy to woo small developers with cheaper AI tools presents an opportunity or competitive factor for David's SaaS and AI ventures."
+          "summary": "Apple betting on cheaper AI to woo small developers is directly relevant to David's small businesses and his Hermes AI agent."
         },
         {
-          "headline": "I'm building a parallel internet, and it's called The Thinnernet",
-          "url": "https://inavoyage.blogspot.com/2026/06/im-building-parallel-internet-and-its.html",
-          "source": "Hacker News",
+          "headline": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "source": "Hugging Face Blog",
           "score": 6,
-          "category": "SMALL BUSINESS",
-          "summary": "The concept of building a 'parallel internet' or 'Thinnernet' could inspire innovative approaches to platform development for UTU or Saucy Investors Club."
+          "category": "AI BUILDERS",
+          "summary": "EVA-Bench Data 2.0 provides a benchmark for AI agents with various tools and scenarios, useful for evaluating and improving Hermes."
+        },
+        {
+          "headline": "Adding MCP Tools to Reachy Mini",
+          "url": "https://huggingface.co/blog/adding-mcp-tools-to-reachy-mini",
+          "source": "Hugging Face Blog",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Adding MCP Tools to Reachy Mini demonstrates practical tool integration for AI, which could inspire similar integrations for Hermes."
         },
         {
           "headline": "Coinbase Executive: Massive Institutions Are Buying Bitcoin’s Crash",
@@ -337,7 +257,7 @@
           "source": "Bitcoin Magazine",
           "score": 6,
           "category": "BITCOIN",
-          "summary": "A Coinbase executive states that massive institutions are buying Bitcoin, indicating growing institutional adoption."
+          "summary": "A Coinbase executive states that massive institutions are buying Bitcoin's crash, indicating institutional adoption."
         },
         {
           "headline": "Full Text of Strategic Bitcoin Reserve Bill Officially Published, Revealing 20-Year Lock-Up, Proof-of-Reserve Mandates",
@@ -345,7 +265,7 @@
           "source": "Bitcoin Magazine",
           "score": 6,
           "category": "BITCOIN",
-          "summary": "The full text of a Strategic Bitcoin Reserve Bill reveals a 20-year lock-up and proof-of-reserve mandates, signaling government-level adoption and regulation."
+          "summary": "The full text of a Strategic Bitcoin Reserve Bill being published, revealing a 20-year lock-up and proof-of-reserve mandates, indicates government or institutional adoption."
         },
         {
           "headline": "Strive (ASST) Buys 32 Bitcoin at $63,900 Average, Bringing Total Holdings to 19,032 BTC",
@@ -353,7 +273,15 @@
           "source": "Bitcoin Magazine",
           "score": 6,
           "category": "BITCOIN",
-          "summary": "Strategy (MSTR) restarts Bitcoin purchases, buying 1,550 BTC for $101 million, demonstrating continued corporate adoption."
+          "summary": "Strive (ASST) buying 32 Bitcoin, bringing total holdings to 19,032 BTC, demonstrates institutional adoption of Bitcoin."
+        },
+        {
+          "headline": "Strategy (MSTR) Restarts Bitcoin Purchases After Selling, Buys 1,550 BTC for $101 Million",
+          "url": "https://bitcoinmagazine.com/news/strategy-restarts-bitcoin-purchases-1550",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "Strategy (MSTR) restarting Bitcoin purchases and buying 1,550 BTC for $101 Million demonstrates continued institutional adoption."
         },
         {
           "headline": "The Increasing Risk of Building in Public",
@@ -361,7 +289,7 @@
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The article on the increasing risk of building in public offers valuable insights for David as a founder operating multiple businesses."
+          "summary": "The article discusses the increasing risks associated with building a business in public, relevant for David's SaaS and Etsy brand."
         },
         {
           "headline": "Data Is the Only Moat",
@@ -369,7 +297,7 @@
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The concept that 'data is the only moat' is a strategic insight applicable to all of David's data-driven businesses like UTU and Saucy Investors Club."
+          "summary": "The article argues that data is the only sustainable moat for businesses, relevant for UTU's commercialization."
         },
         {
           "headline": "When Long-Term Investments Finally Pay Off",
@@ -377,7 +305,7 @@
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The article on long-term investments paying off provides a valuable perspective for David's entrepreneurial journey and business growth."
+          "summary": "The article discusses how long-term investments eventually yield returns, offering a perspective on business growth."
         },
         {
           "headline": "The 1% Improvement Myth: Why Customer Conversations Beat Micro-Improvements Every Time",
@@ -385,15 +313,7 @@
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The '1% Improvement Myth' emphasizes customer conversations over micro-improvements, offering actionable insight for UTU and ChillWave Threads."
-        },
-        {
-          "headline": "Don’t Give Up… Your Assumptions",
-          "url": "https://thebootstrappedfounder.com/dont-give-up-your-assumptions/",
-          "source": "Bootstrapped Founder",
-          "score": 6,
-          "category": "SMALL BUSINESS",
-          "summary": "The advice to 'not give up your assumptions' encourages critical thinking about business models and strategies for David's ventures."
+          "summary": "The article emphasizes the importance of customer conversations over micro-improvements for business growth, relevant for UTU and ChillWave Threads."
         },
         {
           "headline": "Three Kinds of Software Survive: Tasklet's Andrew Lee on Competing to be a Horizontal Platform",
@@ -401,71 +321,271 @@
           "source": "The Cognitive Revolution",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The discussion on competing to be a horizontal platform is relevant for UTU's market positioning and growth strategy."
+          "summary": "Andrew Lee discusses competing to be a horizontal platform, offering strategic insights for UTU's commercialization."
         },
         {
-          "headline": "Research: e-commerce is the Most Popular Side Hustle | Prosper",
-          "url": "https://prospershow.com/news/research-e-commerce-is-the-most-popular-side-hustle/150973",
-          "source": "The Hustle",
+          "headline": "Milliseconds to Match: Criteo's AdTech AI & the Future of Commerce w/ Diarmuid Gill & Liva Ralaivola",
+          "url": "https://www.cognitiverevolution.ai/milliseconds-to-match-criteo-s-adtech-ai-the-future-of-commerce-w-diarmuid-gill-liva-ralaivola/",
+          "source": "The Cognitive Revolution",
           "score": 6,
-          "category": "SMALL BUSINESS",
-          "summary": "Research indicating e-commerce as the most popular side hustle provides market insight for ChillWave Threads."
+          "category": "AI BUILDERS",
+          "summary": "Diarmuid Gill and Liva Ralaivola discuss Criteo's AdTech AI and the future of commerce, relevant for understanding AI applications in business."
         },
         {
-          "headline": "Harsh Goenka shares inspiring viral startup success story of 'Traffic Vada Pav' owner who now earns lakhs monthly - The Economic Times",
-          "url": "https://economictimes.indiatimes.com/news/new-updates/harsh-goenka-shares-inspiring-viral-startup-success-story-of-traffic-vada-pav-owner-who-now-earns-lakhs-monthly/articleshow/131591552.cms",
-          "source": "The Hustle",
-          "score": 6,
-          "category": "SMALL BUSINESS",
-          "summary": "The inspiring success story of 'Traffic Vada Pav' owner earning lakhs monthly provides a real-world example of small business growth."
-        },
-        {
-          "headline": "Techstars Portfolio Company Investrio Targets Solopreneur Finance With AI Platform - TipRanks.com",
-          "url": "https://www.tipranks.com/news/private-companies/techstars-portfolio-company-investrio-targets-solopreneur-finance-with-ai-platform",
-          "source": "Saturday Solopreneur",
-          "score": 6,
-          "category": "SMALL BUSINESS",
-          "summary": "Investrio, a Techstars portfolio company, targeting solopreneur finance with an AI platform is relevant for David's Saucy Investors Club and his solopreneur status."
-        },
-        {
-          "headline": "Fixing csv field mappings for importing transactions - Self-Hosted | v5 - Support Forum",
-          "url": "https://forum.invoiceninja.com/t/fixing-csv-field-mappings-for-importing-transactions/23417",
-          "source": "Saturday Solopreneur",
+          "headline": "Mohnish Pabrai: This will save you 10 years of bad investments",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS7765141039.mp3",
+          "source": "My First Million",
           "score": 6,
           "category": "WORKFLOWS",
-          "summary": "Fixing CSV field mappings for importing transactions is a practical workflow improvement relevant to data management for Saucy Investors Club or UTU."
+          "summary": "Mohnish Pabrai shares investment strategies that could save years of bad investments, directly applicable to Saucy Investors Club."
         },
         {
-          "headline": "23 Best Workflow Orchestration Tools Reviewed in 2026",
-          "url": "https://thedigitalprojectmanager.com/tools/workflow-orchestration-tools/",
-          "source": "AI Builders",
+          "headline": "How Gary Vee runs 7 businesses",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS4508224057.mp3",
+          "source": "My First Million",
           "score": 6,
           "category": "WORKFLOWS",
-          "summary": "A review of the best workflow orchestration tools can provide actionable insights for streamlining operations across David's businesses."
+          "summary": "The episode details how Gary Vee manages seven businesses, offering insights into productivity and multi-venture management."
         },
         {
-          "headline": "AI Tools That Help Solopreneurs Work Smarter - Buzzency-Digital Transformation through AI, Cloud, Talent, and Technology.",
-          "url": "https://www.buzzency.com/ai-tools-that-help-solopreneurs-work-smarter",
-          "source": "Solopreneur",
-          "score": 6,
-          "category": "WORKFLOWS",
-          "summary": "AI tools that help solopreneurs work smarter offer actionable insights for David to optimize his personal productivity and business operations."
-        },
-        {
-          "headline": "15 Best AI Productivity Tools Reviewed in 2026",
-          "url": "https://thedigitalprojectmanager.com/tools/best-ai-productivity-tools/",
-          "source": "Solopreneur",
-          "score": 6,
-          "category": "WORKFLOWS",
-          "summary": "A review of the best AI productivity tools can help David identify and implement new tools to enhance efficiency across his ventures."
-        },
-        {
-          "headline": "7 AI SaaS Startups Built by Solo Founders (and How to Build Yours) | Sigmaschool",
-          "url": "https://sigmaschool.co/blog/7-ai-saas-startups-built-by-solo-founders-and-how-you-can-do-it-too",
-          "source": "Solopreneur",
+          "headline": "Nikesh Arora: Mythos is Real, Analytical SaaS is Dead, and Google can be a $10T company",
+          "url": "https://allinchamathjason.libsyn.com/nikesh-arora-mythos-is-real-analytical-saas-is-dead-and-google-can-be-a-10t-company",
+          "source": "All-In Podcast",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The article on 7 AI SaaS startups built by solo founders provides inspiration and potential strategies for David's UTU and Hermes ventures."
+          "summary": "Nikesh Arora discusses the state of analytical SaaS and Google's potential, relevant for UTU's market position."
+        },
+        {
+          "headline": "Dan Loeb: The Lost Art of Short Selling, and Why Stock Picking is Back",
+          "url": "https://allinchamathjason.libsyn.com/dan-loeb-the-lost-art-of-short-selling-and-why-stock-picking-is-back",
+          "source": "All-In Podcast",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "Dan Loeb discusses short selling and the return of stock picking, directly applicable to Saucy Investors Club."
+        },
+        {
+          "headline": "Bill Ackman: Investment Strategy, What the Market is Missing, How AI Breaks Businesses",
+          "url": "https://allinchamathjason.libsyn.com/bill-ackman-investment-strategy-what-the-market-is-missing-how-ai-breaks-businesses",
+          "source": "All-In Podcast",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "Bill Ackman shares investment strategy and how AI impacts businesses, relevant for Saucy Investors Club and UTU."
+        },
+        {
+          "headline": "Opus 4.8",
+          "url": "https://www.bensbites.com/p/opus-48",
+          "source": "Ben's Bites",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "Opus 4.8 is a new AI model release, which could impact the performance and capabilities of David's Hermes AI agent."
+        },
+        {
+          "headline": "Google's take on openclaw",
+          "url": "https://www.bensbites.com/p/googles-take-on-openclaw",
+          "source": "Ben's Bites",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "Google's take on openclaw could provide insights into open-source AI development relevant to Hermes."
+        },
+        {
+          "headline": "Siri AI at WWDC 2026",
+          "url": "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 5,
+          "category": "PLATFORM NEWS",
+          "summary": "Siri AI at WWDC 2026 indicates potential future AI platform developments from Apple, which could influence David's AI agent strategy."
+        },
+        {
+          "headline": "Quoting Andreas Kling",
+          "url": "https://simonwillison.net/2026/Jun/5/andreas-kling/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "Quoting Andreas Kling provides insights from a builder, which can be inspiring for David's own building efforts."
+        },
+        {
+          "headline": "AI enthusiasts are in a race against time, AI skeptics are in a race against entropy",
+          "url": "https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "The article discusses the race between AI enthusiasts and skeptics, offering a broader perspective on the AI landscape relevant to Hermes."
+        },
+        {
+          "headline": "Quoting Emanuel Maiberg, 404 Media",
+          "url": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "Quoting Emanuel Maiberg, 404 Media, provides another perspective from a builder or commentator in the tech space."
+        },
+        {
+          "headline": "Federal judge blocks H1B visa $100K fee",
+          "url": "https://www.alaskasnewssource.com/2026/06/08/federal-judge-blocks-h1-b-visa-100k-fee/",
+          "source": "Hacker News",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "A federal judge blocking the H1B visa $100K fee could impact small businesses looking to hire talent, relevant for David's ventures."
+        },
+        {
+          "headline": "FrontierCode",
+          "url": "https://cognition.ai/blog/frontier-code",
+          "source": "Hacker News",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "FrontierCode from Cognition AI could offer insights into new AI development tools or approaches relevant to Hermes."
+        },
+        {
+          "headline": "I'm building a parallel internet, and it's called The Thinnernet",
+          "url": "https://inavoyage.blogspot.com/2026/06/im-building-parallel-internet-and-its.html",
+          "source": "Hacker News",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "Building a parallel internet, 'The Thinnernet,' showcases a builder's initiative, which can be inspiring for David."
+        },
+        {
+          "headline": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "source": "Hugging Face Blog",
+          "score": 5,
+          "category": "PLATFORM NEWS",
+          "summary": "Nemotron 3.5 Content Safety offers customizable multimodal safety for enterprise AI, which could be relevant for the ethical and safe operation of Hermes."
+        },
+        {
+          "headline": "Direct Preference Optimization Beyond Chatbots",
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "source": "Hugging Face Blog",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "Direct Preference Optimization Beyond Chatbots explores advanced AI training methods, which could be relevant for enhancing Hermes."
+        },
+        {
+          "headline": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+          "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+          "source": "Hugging Face Blog",
+          "score": 5,
+          "category": "PLATFORM NEWS",
+          "summary": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains is a new model release that could impact the AI landscape and David's Hermes agent."
+        },
+        {
+          "headline": "DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖",
+          "url": "https://tldr.tech/ai/2026-06-04",
+          "source": "TLDR AI",
+          "score": 5,
+          "category": "PLATFORM NEWS",
+          "summary": "Meta is reportedly delaying new model releases, while Google released Gemma 4 12B."
+        },
+        {
+          "headline": "Follow Your Passion (But Not Like That)",
+          "url": "https://thebootstrappedfounder.com/follow-your-passion-but-not-like-that/",
+          "source": "Bootstrapped Founder",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The article offers a nuanced perspective on following one's passion in business."
+        },
+        {
+          "headline": "Don’t Give Up… Your Assumptions",
+          "url": "https://thebootstrappedfounder.com/dont-give-up-your-assumptions/",
+          "source": "Bootstrapped Founder",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The article advises founders to challenge their assumptions, a useful mindset for David's ventures."
+        },
+        {
+          "headline": "AI in the AM — Week 1 Highlights (June 2026)",
+          "url": "https://www.cognitiverevolution.ai/ai-in-the-am-week-1-highlights-june-2026/",
+          "source": "The Cognitive Revolution",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "This is a news recap of AI highlights from the first week of June 2026."
+        },
+        {
+          "headline": "Your Biggest Lever: Designing your AI Career for Maximum Impact, with 80,000 Hours founder Ben Todd",
+          "url": "https://www.cognitiverevolution.ai/your-biggest-lever-designing-your-ai-career-for-maximum-impact-with-80000-hours-founder-ben-todd/",
+          "source": "The Cognitive Revolution",
+          "score": 5,
+          "category": "WORKFLOWS",
+          "summary": "Ben Todd discusses designing an AI career for maximum impact, offering a strategic perspective on AI involvement."
+        },
+        {
+          "headline": "The \"Idiot Index\": the simple math that made Elon Musk billions",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS3077525519.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode discusses a simple math concept that contributed to Elon Musk's success, offering a business insight."
+        },
+        {
+          "headline": "We found 7 business ideas that will blow up in 2026",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS7543635910.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode identifies seven business ideas predicted to grow in 2026, potentially offering inspiration for David."
+        },
+        {
+          "headline": "The insane true story behind MTV",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS8333268290.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode recounts the true story behind MTV, offering a historical business case study."
+        },
+        {
+          "headline": "The 50 richest families in America are betting on this trend",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS3665821831.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode discusses a trend that the 50 richest families in America are investing in, offering a market insight."
+        },
+        {
+          "headline": "We hit record on our private strategy session",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS2231923730.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode shares a private strategy session, potentially offering actionable business insights."
+        },
+        {
+          "headline": "How to manufacture a billionaire childhood",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS9422009315.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode discusses how to foster a 'billionaire childhood,' offering a perspective on success and upbringing."
+        },
+        {
+          "headline": "Inside the Private Stock Market Boom: SpaceX, Anthropic, OpenAI & the Rise of Secondaries",
+          "url": "https://allinchamathjason.libsyn.com/inside-the-private-stock-market-boom-spacex-anthropic-openai-the-rise-of-secondaries",
+          "source": "All-In Podcast",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode discusses the private stock market boom involving companies like SpaceX, Anthropic, and OpenAI, but focuses on fundraising."
+        },
+        {
+          "headline": "The IPO Comeback: Why Tech Giants Are Finally Going Public | All-In Liquidity IPO Panel",
+          "url": "https://allinchamathjason.libsyn.com/the-ipo-comeback-why-tech-giants-are-finally-going-public-all-in-liquidity-ipo-panel",
+          "source": "All-In Podcast",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The episode discusses the return of IPOs for tech giants, but focuses on fundraising."
+        },
+        {
+          "headline": "Thomas Laffont: The $4T AI IPO Wave, 2026's Unicorn Economy, and the 10X Paradox",
+          "url": "https://allinchamathjason.libsyn.com/thomas-laffont-the-4t-ai-ipo-wave-2026s-unicorn-economy-and-the-10x-paradox",
+          "source": "All-In Podcast",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "Thomas Laffont discusses the AI IPO wave and the unicorn economy, but focuses on fundraising."
+        },
+        {
+          "headline": "OpenAI CFO Sarah Friar: IPO, AI Rivalries, New Device, and Spending $100B+ on Compute",
+          "url": "https://allinchamathjason.libsyn.com/openai-cfo-sarah-friar-on-ipo-ai-rivalries-new-device-and-spending-100b-on-compute",
+          "source": "All-In Podcast",
+          "score": 5,
+          "category": "PLATFORM NEWS",
+          "summary": "OpenAI CFO Sarah Friar discusses IPO, AI rivalries, and compute spending, but focuses on fundraising and large company news."
         }
       ]
     },
