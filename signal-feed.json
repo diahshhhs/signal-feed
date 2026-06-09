@@ -4,156 +4,36 @@
       "date": "Monday, June 8, 2026",
       "items": [
         {
-          "headline": "Opus 4.8",
-          "url": "https://www.bensbites.com/p/opus-48",
-          "source": "Ben's Bites",
-          "score": 8,
-          "category": "PLATFORM NEWS",
-          "summary": "Anthropic's release of Claude Opus 4.8 is a significant platform update that directly impacts David's Hermes AI agent and potential integrations with his SaaS products."
-        },
-        {
-          "headline": "Can I get my agents on the phone?",
-          "url": "https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone",
-          "source": "Ben's Bites",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "The ability to get AI agents on the phone is a direct application for Hermes, potentially enhancing its capabilities for David's businesses."
-        },
-        {
-          "headline": "Agents feedback tip",
-          "url": "https://www.bensbites.com/p/agents-feedback-tip",
-          "source": "Ben's Bites",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "Tips on agent feedback are directly applicable to improving the performance and utility of David's Hermes AI agent."
-        },
-        {
-          "headline": "Do agents.md files help coding agents?",
-          "url": "https://news.ycombinator.com/item?id=48441589",
-          "source": "Hacker News",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "The discussion on whether agents.md files help coding agents is directly relevant to developing and optimizing David's Hermes AI agent."
-        },
-        {
-          "headline": "Designing the hf CLI as an agent-optimized way to work with the Hub",
-          "url": "https://huggingface.co/blog/hf-cli-for-agents",
-          "source": "Hugging Face Blog",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "Designing the hf CLI as an agent-optimized way to work with the Hub is directly applicable to improving workflows for David's Hermes AI agent."
-        },
-        {
-          "headline": "Holo3.1: Fast & Local Computer Use Agents",
-          "url": "https://huggingface.co/blog/Hcompany/holo31",
-          "source": "Hugging Face Blog",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "Holo3.1: Fast & Local Computer Use Agents describes a new development in AI agents, directly applicable to David's Hermes AI agent."
-        },
-        {
-          "headline": "Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀",
-          "url": "https://tldr.tech/ai/2026-06-05",
-          "source": "TLDR AI",
-          "score": 8,
-          "category": "PLATFORM NEWS",
-          "summary": "Anthropic Oceanus leaks, ChatGPT Dreaming, and recursive self-improvement are significant AI platform news items directly impacting David's Hermes AI agent."
-        },
-        {
-          "headline": "Opus 4.8 🧠, Anthropic at $965B 💰, Microsoft’s coding model 👨‍💻",
-          "url": "https://tldr.tech/ai/2026-05-29",
-          "source": "TLDR AI",
-          "score": 8,
-          "category": "PLATFORM NEWS",
-          "summary": "Opus 4.8 and Microsoft’s coding model are significant platform news items directly impacting David's Hermes AI agent and development."
-        },
-        {
-          "headline": "AI Liability: The Landmines Under Your SaaS",
-          "url": "https://thebootstrappedfounder.com/?p=61633",
-          "source": "Bootstrapped Founder",
-          "score": 8,
-          "category": "SMALL BUSINESS",
-          "summary": "AI Liability: The Landmines Under Your SaaS is directly applicable to UTU, highlighting critical legal and ethical considerations for AI-powered SaaS."
-        },
-        {
-          "headline": "How to Actually Use Claude Code to Build Serious Software",
-          "url": "https://thebootstrappedfounder.com/?p=61506",
-          "source": "Bootstrapped Founder",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "How to Actually Use Claude Code to Build Serious Software is directly applicable to David's Hermes AI agent and his SaaS development."
-        },
-        {
-          "headline": "Anthropic debuts flagship Claude Opus 4.8 AI model as IPO race with OpenAI heats up",
-          "url": "https://finance.yahoo.com/news/anthropic-debuts-flagship-claude-opus-48-ai-model-as-ipo-race-with-openai-heats-up-170000527.html",
-          "source": "Anthropic",
-          "score": 8,
-          "category": "PLATFORM NEWS",
-          "summary": "Anthropic's debut of Claude Opus 4.8 is a major platform news item directly impacting David's Hermes AI agent and potential integrations."
-        },
-        {
-          "headline": "Anthropic Splits Claude Subscriptions: What Changes for Indie Hackers on June 15",
-          "url": "https://devtoolpicks.com/blog/anthropic-splits-claude-subscriptions-agent-sdk-credit-june-2026",
-          "source": "Anthropic",
-          "score": 8,
-          "category": "PLATFORM NEWS",
-          "summary": "Anthropic splitting Claude subscriptions and changes for indie hackers directly impacts David's potential use of Claude for Hermes or other projects."
-        },
-        {
-          "headline": "Claude Code Increases Weekly Limits by 50% Through July 13, 2026: Anthropic's Anti-Codex Move",
-          "url": "https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026",
-          "source": "Anthropic",
-          "score": 8,
-          "category": "PLATFORM NEWS",
-          "summary": "Claude Code increasing weekly limits by 50% is a direct platform update that benefits David's use of Claude for his Hermes AI agent and development."
-        },
-        {
-          "headline": "ChatGPT Superapp Redesign: Agents, Coding, Images, and Automation Coming in June 2026 - Windows News",
-          "url": "https://windowsnews.ai/article/chatgpt-superapp-redesign-agents-coding-images-and-automation-coming-in-june-2026.423520",
-          "source": "OpenAI",
-          "score": 8,
-          "category": "PLATFORM NEWS",
-          "summary": "ChatGPT Superapp Redesign with Agents, Coding, Images, and Automation coming in June 2026 is a major platform update directly relevant to David's Hermes AI agent."
-        },
-        {
-          "headline": "The best AI agents in 2026 | Product Hunt",
-          "url": "https://www.producthunt.com/categories/ai-agents",
-          "source": "Product Hunt",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "The best AI agents in 2026 on Product Hunt provides a curated list of tools directly relevant to David's Hermes AI agent."
-        },
-        {
-          "headline": "The best AI coding agents in 2026 | Product Hunt",
-          "url": "https://www.producthunt.com/categories/ai-coding-agents",
-          "source": "Product Hunt",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "The best AI coding agents in 2026 on Product Hunt is directly applicable to David's Hermes AI agent and his development workflows."
-        },
-        {
-          "headline": "Best Open-Source AI Coding Agents in 2026 — Agentic.ai",
-          "url": "https://agentic.ai/best/open-source-coding-agents",
-          "source": "AI Builders",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "Best Open-Source AI Coding Agents in 2026 is directly applicable to David's Hermes AI agent and his development workflows."
-        },
-        {
-          "headline": "GitHub - glebis/claude-skills: Collection of Claude Code skills for enhanced AI workflows · GitHub",
-          "url": "https://github.com/glebis/claude-skills",
-          "source": "Solopreneur",
-          "score": 8,
-          "category": "AI BUILDERS",
-          "summary": "A collection of Claude Code skills for enhanced AI workflows is directly applicable to David's Hermes AI agent and his development processes."
-        },
-        {
           "headline": "Build tools, to build more",
           "url": "https://www.bensbites.com/p/build-tools-to-build-more",
           "source": "Ben's Bites",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "This article discusses the importance of building tools to enhance AI development, which is directly applicable to David's Hermes AI agent and his SaaS products."
+          "summary": "This article discusses the importance of building tools to enhance productivity and create more, which is directly applicable to David's various ventures."
+        },
+        {
+          "headline": "Opus 4.8",
+          "url": "https://www.bensbites.com/p/opus-48",
+          "source": "Ben's Bites",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic's Opus 4.8 release is a significant update to a core AI model that could impact David's Hermes AI agent."
+        },
+        {
+          "headline": "Can I get my agents on the phone?",
+          "url": "https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone",
+          "source": "Ben's Bites",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "The article explores the capability of AI agents to handle phone interactions, which is relevant for enhancing David's Hermes AI agent."
+        },
+        {
+          "headline": "Agents feedback tip",
+          "url": "https://www.bensbites.com/p/agents-feedback-tip",
+          "source": "Ben's Bites",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "This tip on agents' feedback provides actionable insights for improving the performance and development of David's Hermes AI agent."
         },
         {
           "headline": "datasette-agent-edit 0.1a0",
@@ -161,7 +41,23 @@
           "source": "Simon Willison's Blog",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "datasette-agent-edit 0.1a0 is a tool for editing data with an agent, which could be relevant for David's Hermes AI agent or data management in his SaaS."
+          "summary": "The release of datasette-agent-edit 0.1a0 is a new tool for working with data and agents, potentially useful for Hermes or Saucy Investors Club."
+        },
+        {
+          "headline": "micropython-wasm 0.1a2",
+          "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "The release of micropython-wasm 0.1a2 offers a new technology for running Python code in a lightweight environment, potentially useful for David's AI projects."
+        },
+        {
+          "headline": "Running Python code in a sandbox with MicroPython and WASM",
+          "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "This article details running Python code in a sandbox with MicroPython and WASM, which could be a valuable workflow for secure and efficient AI development for Hermes."
         },
         {
           "headline": "OpenAI Help: Lockdown Mode",
@@ -169,7 +65,87 @@
           "source": "Simon Willison's Blog",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "OpenAI Help: Lockdown Mode is a platform feature that could impact how David uses OpenAI's services for Hermes or other tools, focusing on security."
+          "summary": "OpenAI's 'Lockdown Mode' is a security feature that could be important for the operational integrity of David's Hermes AI agent."
+        },
+        {
+          "headline": "FrontierCode",
+          "url": "https://cognition.ai/blog/frontier-code",
+          "source": "Hacker News",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "FrontierCode from Cognition AI is a new development in AI coding, directly relevant to the capabilities and development of David's Hermes AI agent."
+        },
+        {
+          "headline": "The Open Source Community is backing OpenEnv for Agentic RL",
+          "url": "https://huggingface.co/blog/openenv-agentic-rl",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "The open-source community backing OpenEnv for Agentic RL is a significant development in AI agent technology, directly applicable to Hermes."
+        },
+        {
+          "headline": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Nemotron 3.5 Content Safety offers customizable multimodal safety for enterprise AI, which is relevant for ensuring ethical and secure operation of Hermes."
+        },
+        {
+          "headline": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "EVA-Bench Data 2.0 provides a comprehensive benchmark for AI tools across multiple domains, useful for evaluating and improving Hermes."
+        },
+        {
+          "headline": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+          "url": "https://huggingface.co/blog/hf-cli-for-agents",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Designing the hf CLI as an agent-optimized way to work with the Hub is a workflow improvement for AI development that could benefit Hermes."
+        },
+        {
+          "headline": "Direct Preference Optimization Beyond Chatbots",
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Direct Preference Optimization Beyond Chatbots indicates advancements in AI training methods that could be applied to improve Hermes's performance."
+        },
+        {
+          "headline": "Holo3.1: Fast & Local Computer Use Agents",
+          "url": "https://huggingface.co/blog/Hcompany/holo31",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Holo3.1 offers fast and local computer use agents, which could be a valuable technology for enhancing the efficiency and responsiveness of Hermes."
+        },
+        {
+          "headline": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
+          "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "The introduction of Mellum2, a 12B Mixture-of-Experts Model by JetBrains, is a new open-source model that could be integrated into or inspire improvements for Hermes."
+        },
+        {
+          "headline": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
+          "url": "https://tldr.tech/ai/2026-06-08",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "News of OpenAI's government stake, Google's compute deal, and Microsoft's Scout launch are significant platform updates affecting the AI ecosystem relevant to Hermes."
+        },
+        {
+          "headline": "Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀",
+          "url": "https://tldr.tech/ai/2026-06-05",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Leaked information about Anthropic Oceanus and ChatGPT Dreaming, along with recursive self-improvement, are key AI platform developments relevant to Hermes."
         },
         {
           "headline": "DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖",
@@ -177,7 +153,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Meta model delays and Gemma 4 12B are platform news items that could affect David's AI strategy and Hermes agent development."
+          "summary": "Meta's model delays and the release of Gemma 4 12B are important updates in the AI model landscape that could affect David's AI strategy for Hermes."
         },
         {
           "headline": "Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸",
@@ -185,7 +161,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Codex Sites, Microsoft models, and Anthropic cost backlash are platform news items relevant to David's AI agent and SaaS operations."
+          "summary": "News about Codex Sites, Microsoft models, and Anthropic's cost backlash are relevant platform updates for David's AI development and cost considerations for Hermes."
         },
         {
           "headline": "Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍",
@@ -193,7 +169,7 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "OpenAI on AWS and Perplexity search code are platform news items that could influence David's AI infrastructure and Hermes agent."
+          "summary": "Anthropic's IPO filing, OpenAI on AWS, and Perplexity's search code are significant platform and business developments in the AI space."
         },
         {
           "headline": "Copilot super app leaks 🤖, Minimax M3 ➕, Nvidia N1X ⚡️",
@@ -201,7 +177,15 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Copilot super app leaks, Minimax M3, and Nvidia N1X are platform news items relevant to David's AI agent and potential integrations."
+          "summary": "Leaked information about Copilot super app, Minimax M3, and Nvidia N1X are important platform updates that could influence David's AI tools and infrastructure."
+        },
+        {
+          "headline": "Opus 4.8 🧠, Anthropic at $965B 💰, Microsoft’s coding model 👨‍💻",
+          "url": "https://tldr.tech/ai/2026-05-29",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Opus 4.8 release and Microsoft's coding model are direct platform news items that could impact the development and capabilities of Hermes."
         },
         {
           "headline": "OpenAI private MCP 🤖, Cognition $26B valuation 💰, ElevenLabs Music v2 🎵",
@@ -209,23 +193,63 @@
           "source": "TLDR AI",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "OpenAI private MCP and ElevenLabs Music v2 are platform news items that could influence David's AI agent and creative endeavors."
+          "summary": "OpenAI's private MCP and ElevenLabs Music v2 are platform updates that could offer new functionalities or integrations for Hermes."
         },
         {
-          "headline": "xAI Cursor limits 🚫, DeepSWE 👨‍💻, China AI travel restrictions 🤖",
-          "url": "https://tldr.tech/ai/2026-05-27",
-          "source": "TLDR AI",
+          "headline": "AI Liability: The Landmines Under Your SaaS",
+          "url": "https://thebootstrappedfounder.com/ai-liability-the-landmines-under-your-saas/",
+          "source": "Bootstrapped Founder",
           "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "xAI Cursor limits and DeepSWE are platform news items that could affect David's AI agent development and usage."
+          "category": "SMALL BUSINESS",
+          "summary": "The discussion on AI liability for SaaS products is directly relevant to UTU and Hermes, providing crucial risk management insights."
         },
         {
-          "headline": "OpenAI is still working on that ‘super app’ | TechCrunch",
-          "url": "https://techcrunch.com/2026/06/07/openai-is-still-working-on-that-super-app/",
-          "source": "OpenAI",
+          "headline": "How to Actually Use Claude Code to Build Serious Software",
+          "url": "https://thebootstrappedfounder.com/how-to-actually-use-claude-code-to-build-serious-software/",
+          "source": "Bootstrapped Founder",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "This guide on how to use Claude Code to build serious software offers practical advice for developing and improving David's Hermes AI agent."
+        },
+        {
+          "headline": "Inside Nathan's Second Brain: Daniel Miessler, Security Expert & Creator of PAI, Audits My AI Setup",
+          "url": "https://www.cognitiverevolution.ai/inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup/",
+          "source": "The Cognitive Revolution",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "An audit of an AI setup by a security expert provides valuable insights into securing and optimizing David's Hermes AI agent."
+        },
+        {
+          "headline": "How Gary Vee runs 7 businesses",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS4508224057.mp3",
+          "source": "My First Million",
+          "score": 7,
+          "category": "SMALL BUSINESS",
+          "summary": "Gary Vee's approach to running 7 businesses offers actionable insights into managing multiple ventures like David's."
+        },
+        {
+          "headline": "Tenable Partners with Anthropic to Advance AI-Driven Cyber Exposure Management - TechAfrica News",
+          "url": "https://techafricanews.com/2026/06/08/tenable-partners-with-anthropic-to-advance-ai-driven-cyber-exposure-management/",
+          "source": "Anthropic",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "OpenAI still working on a 'super app' indicates ongoing development that could impact David's Hermes AI agent and future integrations."
+          "summary": "Tenable partnering with Anthropic to advance AI-driven cyber exposure management highlights a significant application of Anthropic's models, relevant to Hermes."
+        },
+        {
+          "headline": "Anthropic Doubles Claude Cowork Usage Limits | Let's Data Science",
+          "url": "https://letsdatascience.com/news/anthropic-doubles-claude-cowork-usage-limits-db601c73",
+          "source": "Anthropic",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic doubling Claude Cowork usage limits is a direct platform update that could impact David's use of Claude for Hermes."
+        },
+        {
+          "headline": "LG CNS Adopts Anthropic's Claude, Plans Phased Group-Wide Rollout - Seoul Economic Daily",
+          "url": "https://en.sedaily.com/technology/2026/06/09/lg-cns-adopts-anthropics-claude-plans-phased-group-wide",
+          "source": "Anthropic",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "LG CNS adopting Anthropic's Claude for a phased group-wide rollout demonstrates significant enterprise adoption of Anthropic's AI, relevant to Hermes."
         },
         {
           "headline": "Gemini 3.5 — Google DeepMind",
@@ -233,79 +257,15 @@
           "source": "Google DeepMind",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Gemini 3.5 is a new model release from Google DeepMind, directly relevant to David's Hermes AI agent and potential integrations."
+          "summary": "Google DeepMind's Gemini 3.5 release is a major update to a core AI model that could impact David's Hermes AI agent."
         },
         {
-          "headline": "Inside the 2026 AI Agent Wars: Microsoft, Google, and Meta Battle for the OpenClaw Edge - Windows News",
-          "url": "https://windowsnews.ai/article/inside-the-2026-ai-agent-wars-microsoft-google-and-meta-battle-for-the-openclaw-edge.423661",
-          "source": "Meta AI",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Inside the 2026 AI Agent Wars with Microsoft, Google, and Meta battling for the OpenClaw Edge provides context for David's Hermes AI agent development."
-        },
-        {
-          "headline": "Llama 4 Guide 2026 | Meta's Latest Open-Source LLM",
-          "url": "https://guzli.com/learn/ai-assistants/llama-4-guide/",
-          "source": "Meta AI",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Llama 4 Guide 2026, Meta's Latest Open-Source LLM, is a significant platform release that could be relevant for David's Hermes AI agent."
-        },
-        {
-          "headline": "Tool Calling in 2026: Which LLM Should Run Your Infrastructure Agent? | Clanker Cloud Blog",
-          "url": "https://clankercloud.ai/blog/tool-calling-model-selection-clanker-cloud",
+          "headline": "Microsoft is making OpenAI optional inside its AI stack - Startup Fortune",
+          "url": "https://startupfortune.com/microsoft-is-making-openai-optional-inside-its-ai-stack/",
           "source": "Mistral",
           "score": 7,
           "category": "PLATFORM NEWS",
-          "summary": "Tool Calling in 2026: Which LLM Should Run Your Infrastructure Agent? is directly applicable to David's Hermes AI agent and his SaaS infrastructure."
-        },
-        {
-          "headline": "Mistral AI API Pricing (June 2026) — Per-Token Costs | AI Pricing Guru",
-          "url": "https://www.aipricing.guru/mistral-ai-pricing/",
-          "source": "Mistral",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "Mistral AI API Pricing (June 2026) provides crucial cost information for David's AI agent development and SaaS operations."
-        },
-        {
-          "headline": "AI Token Cost Calculator 2026 — Compare API Pricing Across 55+ Models | AI Pricing Guru",
-          "url": "https://www.aipricing.guru/calculators/token-cost/",
-          "source": "Mistral",
-          "score": 7,
-          "category": "PLATFORM NEWS",
-          "summary": "AI Token Cost Calculator 2026 helps compare API pricing across models, which is valuable for optimizing costs for David's Hermes AI agent and SaaS."
-        },
-        {
-          "headline": "The Best AI Workflow Automation Tools | Product Hunt",
-          "url": "https://www.producthunt.com/categories/ai-workflow-automation",
-          "source": "Product Hunt",
-          "score": 7,
-          "category": "WORKFLOWS",
-          "summary": "The Best AI Workflow Automation Tools on Product Hunt offers solutions for optimizing workflows across David's businesses."
-        },
-        {
-          "headline": "The 14-Year-Old Who Built a $14k/Month AI App - YouTube",
-          "url": "https://www.youtube.com/watch?v=qYYeu0E-1SI",
-          "source": "Saturday Solopreneur",
-          "score": 7,
-          "category": "SMALL BUSINESS",
-          "summary": "The 14-Year-Old Who Built a $14k/Month AI App is an inspiring story of a builder showing real results, relevant for David's entrepreneurial ventures."
-        },
-        {
-          "headline": "50 Micro SaaS Ideas for 2026 (Real Revenue Data, Free)",
-          "url": "https://ideaproof.io/lists/micro-saas-ideas",
-          "source": "Indie Hackers",
-          "score": 7,
-          "category": "SMALL BUSINESS",
-          "summary": "50 Micro SaaS Ideas for 2026 with Real Revenue Data provides actionable insights and inspiration for David's UTU and future SaaS endeavors."
-        },
-        {
-          "headline": "GitHub - alvinreal/awesome-opensource-ai: Curated list of the best truly open-source AI projects, models, tools, and infrastructure. · GitHub",
-          "url": "https://github.com/alvinreal/awesome-opensource-ai",
-          "source": "AI Builders",
-          "score": 7,
-          "category": "AI BUILDERS",
-          "summary": "A curated list of the best truly open-source AI projects, models, tools, and infrastructure is valuable for David's Hermes AI agent development."
+          "summary": "Microsoft making OpenAI optional in its AI stack indicates a shift in platform strategy that could affect David's choices for Hermes."
         },
         {
           "headline": "Kiro: Bring engineering rigor to agentic development",
@@ -313,15 +273,15 @@
           "source": "AI Builders",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "Kiro: Bring engineering rigor to agentic development offers tools and methodologies for improving the quality of David's Hermes AI agent."
+          "summary": "Kiro aims to bring engineering rigor to agentic development, which is directly applicable to improving the robustness and reliability of David's Hermes AI agent."
         },
         {
-          "headline": "GitHub - Natively-AI-assistant/natively-cluely-ai-assistant: Natively - Free open-source AI interview copilot & meeting assistant. The best Cluely alternative, Final Round AI alternative, and Interview Coder alternative. Real-time transcription, undetectable stealth mode, local RAG, BYOK. No subscriptions. No data breaches. · GitHub",
-          "url": "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant",
+          "headline": "AI dev tool power rankings & comparison [June 2026] - LogRocket Blog",
+          "url": "https://blog.logrocket.com/ai-dev-tool-power-rankings/",
           "source": "AI Builders",
           "score": 7,
           "category": "AI BUILDERS",
-          "summary": "Natively - Free open-source AI interview copilot & meeting assistant is an example of an open-source AI tool that could inspire or be integrated with Hermes."
+          "summary": "AI dev tool power rankings and comparison offer valuable information for selecting and utilizing tools for Hermes development."
         },
         {
           "headline": "I signed up for another SaaS",
@@ -329,7 +289,7 @@
           "source": "Ben's Bites",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The author signing up for another SaaS provides a small business perspective on SaaS adoption and user experience, relevant to UTU."
+          "summary": "The author's experience signing up for another SaaS provides insights into customer acquisition and product value for David's UTU SaaS."
         },
         {
           "headline": "Is SaaS dead?",
@@ -337,7 +297,7 @@
           "source": "Ben's Bites",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The question 'Is SaaS dead?' prompts reflection on the SaaS market, which is relevant to David's UTU business."
+          "summary": "The discussion on whether SaaS is dead offers valuable perspective for David's UTU business model and market strategy."
         },
         {
           "headline": "Learn the system",
@@ -345,143 +305,167 @@
           "source": "Ben's Bites",
           "score": 6,
           "category": "WORKFLOWS",
-          "summary": "Learning the system refers to understanding and optimizing workflows, which is valuable for all of David's ventures."
+          "summary": "The advice to 'learn the system' is a general workflow principle applicable to optimizing operations across all of David's businesses."
         },
         {
-          "headline": "Amazing Digital Dentures (a failed project)",
-          "url": "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures",
-          "source": "Hugging Face Blog",
+          "headline": "Show HN: Mach – A compiled systems language looking for contributions",
+          "url": "https://github.com/octalide/mach",
+          "source": "Hacker News",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Mach, a compiled systems language, could be a relevant tool for David or his team if they are looking into low-level performance optimization for any of his applications."
+        },
+        {
+          "headline": "Apple bets cheaper AI will woo small developers",
+          "url": "https://techcrunch.com/2026/06/08/apple-bets-cheaper-ai-will-woo-small-developers/",
+          "source": "Hacker News",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "Amazing Digital Dentures (a failed project) offers a valuable lesson in building and iterating, relevant for David's entrepreneurial endeavors."
+          "summary": "Apple's strategy to woo small developers with cheaper AI tools presents an opportunity or competitive factor for David's SaaS and AI ventures."
         },
         {
-          "headline": "Bitcoin Buys a Home: Better and Coinbase Close First Fannie Mae-Backed BTC Mortgage",
-          "url": "https://bitcoinmagazine.com/?p=52487",
+          "headline": "I'm building a parallel internet, and it's called The Thinnernet",
+          "url": "https://inavoyage.blogspot.com/2026/06/im-building-parallel-internet-and-its.html",
+          "source": "Hacker News",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "The concept of building a 'parallel internet' or 'Thinnernet' could inspire innovative approaches to platform development for UTU or Saucy Investors Club."
+        },
+        {
+          "headline": "Coinbase Executive: Massive Institutions Are Buying Bitcoin’s Crash",
+          "url": "https://bitcoinmagazine.com/news/coinbase-executive-institutions-bitcoin",
           "source": "Bitcoin Magazine",
           "score": 6,
           "category": "BITCOIN",
-          "summary": "Bitcoin Buys a Home: Better and Coinbase Close First Fannie Mae-Backed BTC Mortgage signifies institutional adoption of Bitcoin in real estate."
+          "summary": "A Coinbase executive states that massive institutions are buying Bitcoin, indicating growing institutional adoption."
+        },
+        {
+          "headline": "Full Text of Strategic Bitcoin Reserve Bill Officially Published, Revealing 20-Year Lock-Up, Proof-of-Reserve Mandates",
+          "url": "https://bitcoinmagazine.com/news/full-of-strategic-bitcoin-reserve-bill",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "The full text of a Strategic Bitcoin Reserve Bill reveals a 20-year lock-up and proof-of-reserve mandates, signaling government-level adoption and regulation."
+        },
+        {
+          "headline": "Strive (ASST) Buys 32 Bitcoin at $63,900 Average, Bringing Total Holdings to 19,032 BTC",
+          "url": "https://bitcoinmagazine.com/news/strive-buys-32-bitcoin-at-63900-average",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "Strategy (MSTR) restarts Bitcoin purchases, buying 1,550 BTC for $101 million, demonstrating continued corporate adoption."
         },
         {
           "headline": "The Increasing Risk of Building in Public",
-          "url": "https://thebootstrappedfounder.com/?p=61684",
+          "url": "https://thebootstrappedfounder.com/the-increasing-risk-of-building-in-public/",
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The Increasing Risk of Building in Public is a relevant topic for David as a founder, offering insights into transparency and strategy."
+          "summary": "The article on the increasing risk of building in public offers valuable insights for David as a founder operating multiple businesses."
         },
         {
           "headline": "Data Is the Only Moat",
-          "url": "https://thebootstrappedfounder.com/?p=61611",
+          "url": "https://thebootstrappedfounder.com/data-is-the-only-moat/",
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "Data Is the Only Moat emphasizes the importance of data strategy, relevant for UTU and Saucy Investors Club."
+          "summary": "The concept that 'data is the only moat' is a strategic insight applicable to all of David's data-driven businesses like UTU and Saucy Investors Club."
         },
         {
           "headline": "When Long-Term Investments Finally Pay Off",
-          "url": "https://thebootstrappedfounder.com/?p=61516",
+          "url": "https://thebootstrappedfounder.com/when-long-term-investments-finally-pay-off/",
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "When Long-Term Investments Finally Pay Off provides a motivational and strategic perspective for David's entrepreneurial journey."
+          "summary": "The article on long-term investments paying off provides a valuable perspective for David's entrepreneurial journey and business growth."
         },
         {
           "headline": "The 1% Improvement Myth: Why Customer Conversations Beat Micro-Improvements Every Time",
-          "url": "https://thebootstrappedfounder.com/?p=61436",
+          "url": "https://thebootstrappedfounder.com/the-1-improvement-myth-why-customer-conversations-beat-micro-improvements-every-time/",
           "source": "Bootstrapped Founder",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The 1% Improvement Myth: Why Customer Conversations Beat Micro-Improvements Every Time offers actionable insight for David's SaaS and Etsy brand."
+          "summary": "The '1% Improvement Myth' emphasizes customer conversations over micro-improvements, offering actionable insight for UTU and ChillWave Threads."
         },
         {
-          "headline": "[Series Finale] The Story Behind Anfernee's First Digital Dollar, Systems, AI Workflows, and the Future of The Solopreneur Code [Hosted by Yana]",
-          "url": "https://solopreneurcode.substack.com/p/first-digital-dollar-live-anfernee",
+          "headline": "Don’t Give Up… Your Assumptions",
+          "url": "https://thebootstrappedfounder.com/dont-give-up-your-assumptions/",
+          "source": "Bootstrapped Founder",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "The advice to 'not give up your assumptions' encourages critical thinking about business models and strategies for David's ventures."
+        },
+        {
+          "headline": "Three Kinds of Software Survive: Tasklet's Andrew Lee on Competing to be a Horizontal Platform",
+          "url": "https://www.cognitiverevolution.ai/three-kinds-of-software-survive-tasklet-s-andrew-lee-on-competing-to-be-a-horizontal-platform/",
+          "source": "The Cognitive Revolution",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "The discussion on competing to be a horizontal platform is relevant for UTU's market positioning and growth strategy."
+        },
+        {
+          "headline": "Research: e-commerce is the Most Popular Side Hustle | Prosper",
+          "url": "https://prospershow.com/news/research-e-commerce-is-the-most-popular-side-hustle/150973",
+          "source": "The Hustle",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "Research indicating e-commerce as the most popular side hustle provides market insight for ChillWave Threads."
+        },
+        {
+          "headline": "Harsh Goenka shares inspiring viral startup success story of 'Traffic Vada Pav' owner who now earns lakhs monthly - The Economic Times",
+          "url": "https://economictimes.indiatimes.com/news/new-updates/harsh-goenka-shares-inspiring-viral-startup-success-story-of-traffic-vada-pav-owner-who-now-earns-lakhs-monthly/articleshow/131591552.cms",
+          "source": "The Hustle",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "The inspiring success story of 'Traffic Vada Pav' owner earning lakhs monthly provides a real-world example of small business growth."
+        },
+        {
+          "headline": "Techstars Portfolio Company Investrio Targets Solopreneur Finance With AI Platform - TipRanks.com",
+          "url": "https://www.tipranks.com/news/private-companies/techstars-portfolio-company-investrio-targets-solopreneur-finance-with-ai-platform",
           "source": "Saturday Solopreneur",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "The Story Behind Anfernee's First Digital Dollar, Systems, AI Workflows, and the Future of The Solopreneur Code offers insights into building a solopreneur business with AI."
+          "summary": "Investrio, a Techstars portfolio company, targeting solopreneur finance with an AI platform is relevant for David's Saucy Investors Club and his solopreneur status."
         },
         {
-          "headline": "Test Your Idea in 120s - AI Startup Validator & Market Analysis 2026 | IdeaProof",
-          "url": "https://ideaproof.io/lists/micro-saas-ideas",
+          "headline": "Fixing csv field mappings for importing transactions - Self-Hosted | v5 - Support Forum",
+          "url": "https://forum.invoiceninja.com/t/fixing-csv-field-mappings-for-importing-transactions/23417",
+          "source": "Saturday Solopreneur",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "Fixing CSV field mappings for importing transactions is a practical workflow improvement relevant to data management for Saucy Investors Club or UTU."
+        },
+        {
+          "headline": "23 Best Workflow Orchestration Tools Reviewed in 2026",
+          "url": "https://thedigitalprojectmanager.com/tools/workflow-orchestration-tools/",
+          "source": "AI Builders",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "A review of the best workflow orchestration tools can provide actionable insights for streamlining operations across David's businesses."
+        },
+        {
+          "headline": "AI Tools That Help Solopreneurs Work Smarter - Buzzency-Digital Transformation through AI, Cloud, Talent, and Technology.",
+          "url": "https://www.buzzency.com/ai-tools-that-help-solopreneurs-work-smarter",
+          "source": "Solopreneur",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "AI tools that help solopreneurs work smarter offer actionable insights for David to optimize his personal productivity and business operations."
+        },
+        {
+          "headline": "15 Best AI Productivity Tools Reviewed in 2026",
+          "url": "https://thedigitalprojectmanager.com/tools/best-ai-productivity-tools/",
+          "source": "Solopreneur",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "A review of the best AI productivity tools can help David identify and implement new tools to enhance efficiency across his ventures."
+        },
+        {
+          "headline": "7 AI SaaS Startups Built by Solo Founders (and How to Build Yours) | Sigmaschool",
+          "url": "https://sigmaschool.co/blog/7-ai-saas-startups-built-by-solo-founders-and-how-you-can-do-it-too",
           "source": "Solopreneur",
           "score": 6,
           "category": "SMALL BUSINESS",
-          "summary": "Test Your Idea in 120s - AI Startup Validator & Market Analysis 2026 is a tool for validating business ideas, relevant for David's entrepreneurial pursuits."
-        },
-        {
-          "headline": "🔮 The AI boom is becoming an entrepreneurship boom #577",
-          "url": "https://www.exponentialview.co/p/ev-577",
-          "source": "Solopreneur",
-          "score": 6,
-          "category": "SMALL BUSINESS",
-          "summary": "The AI boom becoming an entrepreneurship boom highlights opportunities for David's businesses and future ventures."
-        },
-        {
-          "headline": "Google's take on openclaw",
-          "url": "https://www.bensbites.com/p/googles-take-on-openclaw",
-          "source": "Ben's Bites",
-          "score": 5,
-          "category": "AI BUILDERS",
-          "summary": "Google's perspective on 'openclaw' could offer insights into open-source AI development or agent frameworks, relevant to Hermes."
-        },
-        {
-          "headline": "micropython-wasm 0.1a2",
-          "url": "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything",
-          "source": "Simon Willison's Blog",
-          "score": 5,
-          "category": "AI BUILDERS",
-          "summary": "micropython-wasm 0.1a2 is a technical update on running Python in a browser, which could be relevant for specific development needs in David's stack."
-        },
-        {
-          "headline": "Running Python code in a sandbox with MicroPython and WASM",
-          "url": "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything",
-          "source": "Simon Willison's Blog",
-          "score": 5,
-          "category": "AI BUILDERS",
-          "summary": "Running Python code in a sandbox with MicroPython and WASM offers insights into secure code execution, potentially useful for Hermes or other development."
-        },
-        {
-          "headline": "Uber Caps Usage of AI Tools Like Claude Code to Manage Costs",
-          "url": "https://simonwillison.net/2026/Jun/3/uber-caps-usage/#atom-everything",
-          "source": "Simon Willison's Blog",
-          "score": 5,
-          "category": "SMALL BUSINESS",
-          "summary": "Uber capping usage of AI tools like Claude Code to manage costs provides a real-world example of AI cost management, relevant for David's SaaS and AI agent."
-        },
-        {
-          "headline": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
-          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
-          "source": "Hugging Face Blog",
-          "score": 5,
-          "category": "AI BUILDERS",
-          "summary": "Nemotron 3.5 Content Safety provides insights into customizable multimodal safety for enterprise AI, which could be relevant for Hermes or UTU."
-        },
-        {
-          "headline": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
-          "url": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
-          "source": "Hugging Face Blog",
-          "score": 5,
-          "category": "AI BUILDERS",
-          "summary": "EVA-Bench Data 2.0 with 3 Domains, 121 Tools, and 213 Scenarios offers a benchmark for AI agent performance, relevant for Hermes."
-        },
-        {
-          "headline": "Direct Preference Optimization Beyond Chatbots",
-          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
-          "source": "Hugging Face Blog",
-          "score": 5,
-          "category": "AI BUILDERS",
-          "summary": "Direct Preference Optimization Beyond Chatbots explores advanced AI training techniques, potentially relevant for enhancing Hermes."
-        },
-        {
-          "headline": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains",
-          "url": "https://huggingface.co/blog/JetBrains/mellum2-launch",
-          "source": "Hugging Face Blog",
-          "score": 5,
-          "category": "AI BUILDERS",
-          "summary": "Introducing Mellum2: A 12B Mixture-of-Experts Model by JetBrains is a new model release that could be relevant for David's AI agent development."
+          "summary": "The article on 7 AI SaaS startups built by solo founders provides inspiration and potential strategies for David's UTU and Hermes ventures."
         }
       ]
     },
