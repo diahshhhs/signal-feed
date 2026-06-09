@@ -2,380 +2,394 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="light only">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SIGNAL FEED</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { color-scheme: light only; background: #ffffff; }
 
-body {
-  background: #ffffff;
-  color: #000000;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 13px;
-  line-height: 1.6;
-}
+  body {
+    background: #f5f5f0 !important;
+    color: #000000;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
 
-/* ── MASTHEAD ──────────────────────────────────────────────── */
-#masthead {
-  background: #000000;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 20px 12px;
-  border-bottom: 3px solid #000;
-}
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e2dc;
+  }
 
-#masthead h1 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(38px, 7vw, 72px);
-  font-weight: 900;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  line-height: 1;
-}
+  .header-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    padding: 0 20px;
+  }
 
-#masthead-sub {
-  margin-top: 6px;
-  font-size: 11px;
-  font-family: "Courier New", Courier, monospace;
-  opacity: 0.8;
-  letter-spacing: 0.05em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-}
+  .wordmark {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
 
-#refresh-btn {
-  background: transparent;
-  border: 1px solid rgba(255,255,255,0.5);
-  color: #fff;
-  font-family: "Courier New", monospace;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 2px 9px;
-  cursor: pointer;
-}
-#refresh-btn:hover { background: rgba(255,255,255,0.15); }
+  .updated {
+    font-size: 12px;
+    color: #999999;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 
-/* ── STUB BANNER ───────────────────────────────────────────── */
-#stub-banner {
-  display: none;
-  background: #fffbe6;
-  border-bottom: 1px solid #c8a000;
-  text-align: center;
-  padding: 5px 12px;
-  font-size: 11px;
-  color: #7a5c00;
-  font-family: "Courier New", monospace;
-}
+  .live-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #4caf78;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
 
-/* ── THREE-COLUMN LAYOUT ───────────────────────────────────── */
-#page {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+  .filter-bar {
+    border-top: 1px solid #f0f0eb;
+    padding: 0 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .filter-bar::-webkit-scrollbar { display: none; }
 
-#columns {
-  display: grid;
-  grid-template-columns: 170px 1fr 170px;
-  gap: 0;
-  border-bottom: 2px solid #000;
-}
+  .filter-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    display: flex;
+    gap: 6px;
+    padding: 9px 0;
+    white-space: nowrap;
+  }
 
-@media (max-width: 700px) {
-  #columns { grid-template-columns: 1fr; }
-  #col-left  { order: 2; border-right: none; border-top: 2px solid #000; }
-  #col-right { order: 3; border-left: none;  border-top: 2px solid #000; }
-  #col-center { order: 1; }
-}
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 13px;
+    border-radius: 20px;
+    border: 1px solid #d8d8d2;
+    background: #f5f5f0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #666666;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    user-select: none;
+    letter-spacing: 0.02em;
+  }
+  .pill:hover { border-color: #aaaaaa; color: #000000; }
+  .pill.active { background: #000000; border-color: #000000; color: #ffffff; }
 
-/* ── COLUMNS ───────────────────────────────────────────────── */
-#col-left {
-  border-right: 1px solid #000;
-  padding: 12px 10px;
-}
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+  }
 
-#col-center {
-  padding: 12px 14px;
-  border-right: 1px solid #000;
-}
+  .section-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #999999;
+    margin: 32px 0 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e2dc;
+  }
 
-#col-right {
-  padding: 12px 10px;
-}
+  .section > .section-label:first-child { margin-top: 0; }
 
-/* ── SECTION HEADERS ───────────────────────────────────────── */
-.sec-head {
-  font-family: "Courier New", monospace;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #000;
-  border-bottom: 2px solid #000;
-  padding-bottom: 3px;
-  margin-bottom: 8px;
-  margin-top: 14px;
-}
-.sec-head:first-child { margin-top: 0; }
+  .article {
+    padding: 13px 0;
+    border-bottom: 1px solid #ebebeb;
+    display: block;
+    text-decoration: none;
+    color: #000000;
+  }
+  .article:last-child { border-bottom: none; }
 
-/* ── SOURCE LINKS ──────────────────────────────────────────── */
-.src-list { list-style: none; margin-bottom: 4px; }
-.src-list li { margin-bottom: 3px; }
-.src-list a {
-  color: #000080;
-  text-decoration: underline;
-  font-size: 12px;
-  font-family: "Courier New", monospace;
-}
-.src-list a:visited { color: #551a8b; }
-.src-list a:hover   { color: #cc0000; }
+  .article-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: #000000 !important;
+    line-height: 1.45;
+    margin-bottom: 5px;
+  }
+  .article:hover .article-title {
+    text-decoration: underline;
+    text-decoration-color: #cccccc;
+    text-underline-offset: 3px;
+  }
 
-/* ── CENTER — TODAY'S SIGNAL ───────────────────────────────── */
-#center-head {
-  font-family: "Courier New", monospace;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  text-decoration: underline;
-  margin-bottom: 12px;
-  color: #000;
-}
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    color: #999999;
+    font-weight: 300;
+  }
+  .source-name { font-weight: 500; color: #555555; }
+  .sep { width: 2px; height: 2px; background: #cccccc; border-radius: 50%; flex-shrink: 0; }
+  .signal-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+  .sig-high { background: #4caf78; }
+  .sig-mid  { background: #e8a838; }
 
-/* ── HEADLINE ITEMS ────────────────────────────────────────── */
-.item { padding: 9px 0; border-bottom: 1px solid #ccc; }
-.item:last-child { border-bottom: none; }
+  .person-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 0;
+    border-bottom: 1px solid #ebebeb;
+    text-decoration: none;
+    color: #000000;
+  }
+  .person-row:last-child { border-bottom: none; }
+  .person-row:hover .person-name { color: #555555; }
 
-.cat-tag {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #cc0000;
-  display: block;
-  margin-bottom: 2px;
-}
+  .person-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #efefea;
+    border: 1px solid #e2e2dc;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #555555;
+  }
 
-.item-link {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 13px;
-  font-weight: 700;
-  color: #cc0000;
-  text-decoration: underline;
-  display: block;
-  line-height: 1.4;
-  margin-bottom: 3px;
-}
-.item-link:visited { color: #551a8b; }
-.item-link:hover   { color: #880000; }
+  .person-info { flex: 1; min-width: 0; }
+  .person-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.15s ease;
+  }
+  .person-handle { font-size: 12px; color: #999999; font-weight: 300; }
 
-.item.top .item-link { font-size: 16px; }
+  .person-tag {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #f5f5f0;
+    border: 1px solid #d8d8d2;
+    color: #888888;
+    flex-shrink: 0;
+    letter-spacing: 0.04em;
+  }
+  .person-tag.core { background: #000000; border-color: #000000; color: #ffffff; }
 
-/* Archive days — slightly smaller */
-.item.archive .item-link    { font-size: 12px; }
-.item.archive .item-summary { font-size: 11px; }
+  footer {
+    text-align: center;
+    font-size: 11px;
+    color: #bbbbbb;
+    padding: 20px;
+    border-top: 1px solid #e2e2dc;
+    background: #ffffff;
+    letter-spacing: 0.04em;
+  }
 
-/* ── ARCHIVE DAY HEADER ────────────────────────────────────── */
-.day-head {
-  font-family: "Courier New", monospace;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  font-variant: small-caps;
-  text-transform: uppercase;
-  color: #000;
-  border-top: 1px solid #000;
-  padding-top: 10px;
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
-.item-meta {
-  font-size: 10px;
-  color: #888;
-  margin-bottom: 3px;
-  font-family: "Courier New", monospace;
-}
-
-.item-summary {
-  font-size: 12px;
-  color: #000;
-  font-family: "Courier New", monospace;
-  line-height: 1.55;
-}
-
-/* ── FOOTER ────────────────────────────────────────────────── */
-footer {
-  border-top: 2px solid #000;
-  text-align: center;
-  padding: 10px 0 14px;
-  font-size: 11px;
-  color: #666;
-  font-family: "Courier New", monospace;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
+  @media (max-width: 480px) {
+    .header-inner { height: 46px; }
+    .wordmark { font-size: 16px; }
+    main { padding: 20px 16px 80px; }
+    .article-title { font-size: 14px; }
+  }
 </style>
 </head>
 <body>
 
-<div id="masthead">
-  <h1>Signal Feed</h1>
-  <div id="masthead-sub">
-    <span>feed.joneslab.dev</span>
-    <span>|</span>
-    <span id="today-date"></span>
-    <span>|</span>
-    <button id="refresh-btn" onclick="loadFeed()">&#8635; Refresh</button>
+<div class="sticky-top">
+  <div class="header-inner">
+    <div class="wordmark">Signal Feed</div>
+    <div class="updated" id="updated-time">
+      <span class="live-dot"></span>
+      <span id="updated-label">Loading...</span>
+    </div>
+  </div>
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <div class="pill active" onclick="filter('all',this)">All</div>
+      <div class="pill" onclick="filter('ai',this)">AI &amp; Builders</div>
+      <div class="pill" onclick="filter('platforms',this)">Platforms</div>
+      <div class="pill" onclick="filter('business',this)">Small Business</div>
+      <div class="pill" onclick="filter('bitcoin',this)">Bitcoin</div>
+      <div class="pill" onclick="filter('people',this)">People</div>
+    </div>
   </div>
 </div>
 
-<div id="stub-banner">Showing sample data &#8212; live feed connects tomorrow</div>
-
-<div id="page">
-  <div id="columns">
-
-    <div id="col-left">
-      <div class="sec-head">AI &amp; Builders</div>
-      <ul class="src-list">
-        <li><a href="https://bensbites.beehiiv.com" target="_blank" rel="noopener">Ben&#39;s Bites</a></li>
-        <li><a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR AI</a></li>
-        <li><a href="https://simonwillison.net" target="_blank" rel="noopener">Simon Willison&#39;s Blog</a></li>
-        <li><a href="https://news.ycombinator.com" target="_blank" rel="noopener">Hacker News</a></li>
-        <li><a href="https://therundown.ai" target="_blank" rel="noopener">The Rundown AI</a></li>
-        <li><a href="https://aichatdaily.com" target="_blank" rel="noopener">AI Chat Daily</a></li>
-        <li><a href="https://producthunt.com" target="_blank" rel="noopener">Product Hunt</a></li>
-      </ul>
-
-      <div class="sec-head">Platform News</div>
-      <ul class="src-list">
-        <li><a href="https://anthropic.com/news" target="_blank" rel="noopener">Anthropic</a></li>
-        <li><a href="https://openai.com/news" target="_blank" rel="noopener">OpenAI</a></li>
-        <li><a href="https://deepmind.google/discover/blog" target="_blank" rel="noopener">Google DeepMind</a></li>
-        <li><a href="https://blog.google/technology/ai" target="_blank" rel="noopener">Google AI Blog</a></li>
-        <li><a href="https://ai.meta.com/blog" target="_blank" rel="noopener">Meta AI</a></li>
-        <li><a href="https://mistral.ai/news" target="_blank" rel="noopener">Mistral</a></li>
-        <li><a href="https://huggingface.co/blog" target="_blank" rel="noopener">Hugging Face</a></li>
-      </ul>
-
-      <div class="sec-head">People Watching</div>
-      <ul class="src-list">
-        <li><a href="https://twitter.com/simonw" target="_blank" rel="noopener">@simonw</a></li>
-        <li><a href="https://twitter.com/swyx" target="_blank" rel="noopener">@swyx</a></li>
-      </ul>
-    </div>
-
-    <div id="col-center">
-      <div id="center-head">Today&#39;s Signal</div>
-      <div id="headlines-list"></div>
-    </div>
-
-    <div id="col-right">
-      <div class="sec-head">Small Business</div>
-      <ul class="src-list">
-        <li><a href="https://indiehackers.com" target="_blank" rel="noopener">Indie Hackers</a></li>
-        <li><a href="https://thebootstrappedfounder.com" target="_blank" rel="noopener">Bootstrapped Founder</a></li>
-        <li><a href="https://thehustle.co" target="_blank" rel="noopener">The Hustle</a></li>
-        <li><a href="https://justinwelsh.me" target="_blank" rel="noopener">Saturday Solopreneur</a></li>
-        <li><a href="https://nesslabs.com" target="_blank" rel="noopener">Ness Labs</a></li>
-      </ul>
-
-      <div class="sec-head">Bitcoin</div>
-      <ul class="src-list">
-        <li><a href="https://bitcoinmagazine.com" target="_blank" rel="noopener">Bitcoin Magazine</a></li>
-        <li><a href="https://proofofwords.com" target="_blank" rel="noopener">Proof of Words</a></li>
-        <li><a href="https://coindesk.com" target="_blank" rel="noopener">CoinDesk &#8212; The Node</a></li>
-      </ul>
-
-      <div class="sec-head">Workflows</div>
-      <ul class="src-list">
-        <li><a href="https://bensbites.beehiiv.com" target="_blank" rel="noopener">Ben&#39;s Bites</a></li>
-        <li><a href="https://justinwelsh.me" target="_blank" rel="noopener">Saturday Solopreneur</a></li>
-      </ul>
-
-      <div class="sec-head">Morning Podcast</div>
-      <ul class="src-list">
-        <li><a href="https://podcastintelligence.joneslab.dev" target="_blank" rel="noopener">&#9654; Latest Episode</a></li>
-      </ul>
-    </div>
-
+<main id="feed-container">
+  <div style="text-align:center;padding:60px 20px;color:#999999;font-size:14px;font-weight:300;">
+    Loading feed...
   </div>
-</div>
+</main>
 
-<footer>Signal Feed &nbsp;|&nbsp; Powered by Hermes &nbsp;|&nbsp; joneslab.dev</footer>
+<footer>
+  Signal Feed &nbsp;·&nbsp; Powered by Hermes &nbsp;·&nbsp; joneslab.dev
+</footer>
 
 <script>
-const FEED_URL = './signal-feed.json';
+// People Worth Watching — pulled from Notion source list
+const PEOPLE = [
+  { handle: 'Teknium',        name: 'Teknium',               org: 'Nous Research',        status: 'core' },
+  { handle: 'labenz',         name: 'Nathan Labenz',         org: 'Cognitive Revolution', status: 'core' },
+  { handle: 'stephsmithio',   name: 'Steph Smith',           org: 'Nvidia',               status: 'core' },
+  { handle: 'shannholmberg',  name: 'Shann Holmberg',        org: 'AI / Builder',         status: 'watch' },
+  { handle: 'PeterDiamandis', name: 'Peter Diamandis',       org: 'XPRIZE / Moonshots',   status: 'watch' },
+  { handle: 'EMostaque',      name: 'Emad Mostaque',         org: 'Stability AI',         status: 'watch' },
+  { handle: 'DaveBlundin',    name: 'Dave Blundin',          org: 'Link Ventures',        status: 'watch' },
+  { handle: 'alexwg',         name: 'Alex Wissner-Gross',    org: 'MIT / Moonshots',      status: 'watch' },
+  { handle: 'andrewdfeldman', name: 'Andrew Feldman',        org: 'Cerebras Systems',     status: 'watch' },
+  { handle: 'Will4Planet',    name: 'Will Marshall',         org: 'Planet Labs',          status: 'watch' },
+  { handle: 'chamath',        name: 'Chamath Palihapitiya',  org: 'All-In Pod',           status: 'watch' },
+  { handle: 'jason',          name: 'Jason Calacanis',       org: 'All-In Pod',           status: 'watch' },
+  { handle: 'mhp_guy',        name: 'Chris Koerner',         org: 'The Koerner Office',   status: 'watch' },
+  { handle: 'thesamparr',     name: 'Sam Parr',              org: 'My First Million',     status: 'watch' },
+  { handle: 'ShaanVP',        name: 'Shaan Puri',            org: 'My First Million',     status: 'watch' },
+  { handle: 'MohnishPabrai',  name: 'Mohnish Pabrai',        org: 'Pabrai Funds',         status: 'watch' },
+  { handle: 'jaeden_ai',      name: 'Jaeden Schafer',        org: 'AI Hustle',            status: 'watch' },
+  { handle: 'conorgrennan',   name: 'Conor Grennan',         org: 'AI Mindset',           status: 'watch' },
+  { handle: 'adamcurry',      name: 'Adam Curry',            org: 'Podcasting 2.0',       status: 'watch' },
+];
 
-const STUB = {
-  items: [
-    { category:"PLATFORM NEWS", headline:"Anthropic ships Claude 4 with extended thinking and 200K context window", url:"https://anthropic.com/news", source:"Anthropic Blog", score:9, summary:"New flagship model adds transparent multi-step reasoning — direct impact on Hermes agent capabilities." },
-    { category:"AI BUILDERS", headline:"Simon Willison releases LLM 0.17 with plugin support for local models", url:"https://simonwillison.net", source:"Simon Willison's Blog", score:9, summary:"CLI tool now supports Ollama and LM Studio via a unified plugin interface." },
-    { category:"SMALL BUSINESS", headline:"Indie founder crosses $10K MRR with AI scheduling tool built in 90 days", url:"https://indiehackers.com", source:"Indie Hackers", score:8, summary:"Solo developer details full stack, pricing strategy, and acquisition playbook — relevant comp for UTU." },
-    { category:"BITCOIN", headline:"El Salvador expands Bitcoin integration to government supplier payments", url:"https://bitcoinmagazine.com", source:"Bitcoin Magazine", score:7, summary:"State contractors can now invoice and receive in BTC directly through the Chivo wallet system." },
-    { category:"SMALL BUSINESS", headline:"How Arvid Kahl automated his entire content pipeline with AI agents", url:"https://thebootstrappedfounder.com", source:"Bootstrapped Founder", score:7, summary:"Exact tools, prompts, and scheduling system — applies to ChillWave and Saucy workflows." }
-  ]
+// Map signal-feed.json categories → filter pill keys
+const CAT_MAP = {
+  'AI BUILDERS':   'ai',
+  'PLATFORM NEWS': 'platforms',
+  'SMALL BUSINESS':'business',
+  'WORKFLOWS':     'business',
+  'BITCOIN':       'bitcoin',
 };
+
+function filter(cat, el) {
+  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('.section').forEach(s => {
+    s.style.display = (cat === 'all' || s.dataset.cat === cat) ? 'block' : 'none';
+  });
+}
+
+function signalClass(score) {
+  if (!score) return 'sig-mid';
+  return score >= 7 ? 'sig-high' : 'sig-mid';
+}
 
 function esc(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-function renderItems(items, isToday) {
-  return [...items].sort((a,b) => b.score - a.score).map((item, i) => {
-    const cls = isToday && i < 3 ? ' top' : (!isToday ? ' archive' : '');
-    return `<div class="item${cls}">
-      <span class="cat-tag">${esc(item.category)}</span>
-      <a class="item-link" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.headline)}</a>
-      <div class="item-meta">${esc(item.source)} &nbsp; ${item.score}/10</div>
-      ${item.summary ? `<div class="item-summary">${esc(item.summary)}</div>` : ''}
-    </div>`;
-  }).join('');
-}
-
-function renderFeed(data, isStub) {
-  if (isStub) {
-    document.getElementById('headlines-list').innerHTML = renderItems(data.items || [], true);
-    document.getElementById('stub-banner').style.display = 'block';
-    return;
-  }
-  const days = data.days || [];
-  let html = '';
-  days.forEach((day, idx) => {
-    if (idx > 0) {
-      html += `<div class="day-head">${esc(day.date.toUpperCase())}</div>`;
-    }
-    html += renderItems(day.items || [], idx === 0);
-  });
-  document.getElementById('headlines-list').innerHTML = html;
-  document.getElementById('stub-banner').style.display = 'none';
+function buildPeopleSection() {
+  const core  = PEOPLE.filter(p => p.status === 'core');
+  const watch = PEOPLE.filter(p => p.status === 'watch');
+  const rows = [...core, ...watch].map(p => `
+    <a class="person-row" href="https://x.com/${p.handle}" target="_blank">
+      <div class="person-avatar">${p.name.charAt(0)}</div>
+      <div class="person-info">
+        <div class="person-name">${esc(p.name)}</div>
+        <div class="person-handle">@${esc(p.handle)} · ${esc(p.org)}</div>
+      </div>
+      <div class="person-tag ${p.status === 'core' ? 'core' : ''}">${p.status === 'core' ? 'Core' : 'Watch'}</div>
+    </a>`).join('');
+  return `<div class="section" data-cat="people">
+    <div class="section-label">People Worth Watching</div>
+    ${rows}
+  </div>`;
 }
 
 async function loadFeed() {
-  const btn = document.getElementById('refresh-btn');
-  btn.textContent = '...';
-  btn.disabled = true;
   try {
-    const res = await fetch(FEED_URL + '?t=' + Date.now());
+    const res = await fetch('signal-feed.json?t=' + Date.now());
     if (!res.ok) throw new Error('HTTP ' + res.status);
     const data = await res.json();
-    if (!data.days?.length) throw new Error('empty');
-    renderFeed(data, false);
-  } catch {
-    renderFeed(STUB, true);
-  } finally {
-    btn.innerHTML = '&#8635; Refresh';
-    btn.disabled = false;
+
+    // Header: show most recent day label
+    const days = data.days || [];
+    if (days.length && days[0].date) {
+      document.getElementById('updated-label').textContent = days[0].date;
+    }
+
+    // Bucket items by category across all days
+    const buckets = {
+      ai:        { label: 'AI &amp; Builders',       articles: [] },
+      platforms: { label: 'Platform News',            articles: [] },
+      business:  { label: 'Small Business',           articles: [] },
+      bitcoin:   { label: 'Bitcoin',                  articles: [] },
+    };
+
+    days.forEach(day => {
+      (day.items || []).forEach(item => {
+        const cat = CAT_MAP[item.category] || 'ai';
+        if (buckets[cat]) {
+          buckets[cat].articles.push({
+            title:    item.headline,
+            url:      item.url,
+            source:   item.source,
+            score:    item.score,
+            day_date: day.date,
+          });
+        }
+      });
+    });
+
+    let html = '';
+    for (const [cat, { label, articles }] of Object.entries(buckets)) {
+      if (!articles.length) continue;
+      const rows = articles.map(a => `
+        <a class="article" href="${esc(a.url)}" target="_blank">
+          <div class="article-title">${esc(a.title)}</div>
+          <div class="article-meta">
+            <span class="signal-dot ${signalClass(a.score)}"></span>
+            <span class="source-name">${esc(a.source)}</span>
+            <span class="sep"></span>
+            <span>${esc(a.day_date)}</span>
+          </div>
+        </a>`).join('');
+      html += `<div class="section" data-cat="${cat}">
+        <div class="section-label">${label}</div>
+        ${rows}
+      </div>`;
+    }
+
+    html += buildPeopleSection();
+    document.getElementById('feed-container').innerHTML = html;
+
+  } catch(e) {
+    document.getElementById('feed-container').innerHTML =
+      '<div style="text-align:center;padding:60px 20px;color:#999;font-size:14px;font-weight:300;">Feed unavailable — check back soon.</div>';
+    console.error('Feed load error:', e);
   }
 }
 
-document.getElementById('today-date').textContent =
-  new Date().toLocaleDateString('en-US', { weekday:'long', month:'long', day:'numeric', year:'numeric' });
-
 loadFeed();
 </script>
+
 </body>
 </html>
