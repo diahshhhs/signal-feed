@@ -1,6 +1,779 @@
 {
   "days": [
     {
+      "date": "Thursday, June 11, 2026",
+      "items": [
+        {
+          "headline": "How AI is powering the next wave of micro-SaaS entrepreneurs",
+          "url": "https://thenextweb.com/news/ai-powering-micro-saas-entrepreneurs",
+          "source": "Solopreneur",
+          "score": 9,
+          "category": "SMALL BUSINESS",
+          "summary": "The Next Web explains how AI is powering the next wave of micro-SaaS entrepreneurs, directly applicable to UTU and Saucy Investors Club."
+        },
+        {
+          "headline": "Build tools, to build more",
+          "url": "https://www.bensbites.com/p/build-tools-to-build-more",
+          "source": "Ben's Bites",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "The article discusses building tools to enhance AI agent capabilities, which is directly applicable to David's Hermes AI agent and potentially UTU's automation."
+        },
+        {
+          "headline": "Can I get my agents on the phone?",
+          "url": "https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone",
+          "source": "Ben's Bites",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "The article explores the ability of AI agents to make phone calls, a potential feature or integration for David's Hermes AI agent."
+        },
+        {
+          "headline": "Agents feedback tip",
+          "url": "https://www.bensbites.com/p/agents-feedback-tip",
+          "source": "Ben's Bites",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "A tip on providing feedback to AI agents is directly applicable to improving the performance and development of David's Hermes AI agent."
+        },
+        {
+          "headline": "datasette-agent 0.2a0",
+          "url": "https://simonwillison.net/2026/Jun/10/datasette-agent/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "datasette-agent 0.2a0 is a new tool for building AI agents, directly applicable to David's Hermes AI agent development."
+        },
+        {
+          "headline": "llm 0.32a3",
+          "url": "https://simonwillison.net/2026/Jun/9/llm/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "llm 0.32a3 is a new version of a tool for working with language models, directly applicable to David's Hermes AI agent development."
+        },
+        {
+          "headline": "Setting a custom price for a model in AgentsView",
+          "url": "https://simonwillison.net/2026/Jun/9/agentsview-custom-model-price/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "Setting a custom price for a model in AgentsView is a practical workflow tip for managing costs associated with David's Hermes AI agent."
+        },
+        {
+          "headline": "AI agent runs amok in Fedora and elsewhere",
+          "url": "https://lwn.net/SubscriberLink/1077035/c7e7c14fbd60fae9/",
+          "source": "Hacker News",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "An AI agent running amok in Fedora highlights the challenges and considerations for robust AI agent development, directly relevant to David's Hermes AI agent."
+        },
+        {
+          "headline": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+          "url": "https://huggingface.co/blog/mishig/spaces-agents-md",
+          "source": "Hugging Face Blog",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "An agent building a 3D Paris Gallery by chaining Hugging Face Spaces demonstrates practical AI agent capabilities and workflows applicable to Hermes."
+        },
+        {
+          "headline": "Designing the hf CLI as an agent-optimized way to work with the Hub",
+          "url": "https://huggingface.co/blog/hf-cli-for-agents",
+          "source": "Hugging Face Blog",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "Designing the hf CLI as an agent-optimized way to work with the Hub provides a direct workflow improvement for David's Hermes AI agent development."
+        },
+        {
+          "headline": "The Increasing Risk of Building in Public",
+          "url": "https://thebootstrappedfounder.com/the-increasing-risk-of-building-in-public/",
+          "source": "Bootstrapped Founder",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "The article discusses the increasing risks associated with building a business in public, offering insights relevant to David's SaaS and Etsy brands."
+        },
+        {
+          "headline": "AI Liability: The Landmines Under Your SaaS",
+          "url": "https://thebootstrappedfounder.com/ai-liability-the-landmines-under-your-saas/",
+          "source": "Bootstrapped Founder",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "This piece addresses AI liability and potential pitfalls for SaaS companies, directly applicable to UTU and Hermes."
+        },
+        {
+          "headline": "Data Is the Only Moat",
+          "url": "https://thebootstrappedfounder.com/data-is-the-only-moat/",
+          "source": "Bootstrapped Founder",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "The article argues that data is the only sustainable moat for businesses, which is relevant for UTU's commercialization and Saucy Investors Club."
+        },
+        {
+          "headline": "How to Actually Use Claude Code to Build Serious Software",
+          "url": "https://thebootstrappedfounder.com/how-to-actually-use-claude-code-to-build-serious-software/",
+          "source": "Bootstrapped Founder",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "The article provides actionable guidance on using Claude Code for serious software development, directly applicable to David's Hermes AI agent and UTU."
+        },
+        {
+          "headline": "The 1% Improvement Myth: Why Customer Conversations Beat Micro-Improvements Every Time",
+          "url": "https://thebootstrappedfounder.com/the-1-improvement-myth-why-customer-conversations-beat-micro-improvements-every-time/",
+          "source": "Bootstrapped Founder",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "The article emphasizes the importance of customer conversations over micro-improvements, a key insight for UTU and ChillWave Threads."
+        },
+        {
+          "headline": "Inside Nathan's Second Brain: Daniel Miessler, Security Expert & Creator of PAI, Audits My AI Setup",
+          "url": "https://www.cognitiverevolution.ai/inside-nathan-s-second-brain-daniel-miessler-security-expert-creator-of-pai-audits-my-ai-setup/",
+          "source": "The Cognitive Revolution",
+          "score": 8,
+          "category": "WORKFLOWS",
+          "summary": "Daniel Miessler audits an AI setup, providing insights into personal AI agent configurations directly applicable to David's Hermes."
+        },
+        {
+          "headline": "Three Kinds of Software Survive: Tasklet's Andrew Lee on Competing to be a Horizontal Platform",
+          "url": "https://www.cognitiverevolution.ai/three-kinds-of-software-survive-tasklet-s-andrew-lee-on-competing-to-be-a-horizontal-platform/",
+          "source": "The Cognitive Revolution",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "Andrew Lee discusses competing to be a horizontal platform, a strategic insight for UTU's commercialization."
+        },
+        {
+          "headline": "How Gary Vee runs 7 businesses",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS4508224057.mp3",
+          "source": "My First Million",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "This episode details how Gary Vee manages seven businesses, providing actionable workflow and operational insights for David."
+        },
+        {
+          "headline": "Nikesh Arora: Mythos is Real, Analytical SaaS is Dead, and Google can be a $10T company",
+          "url": "https://allinchamathjason.libsyn.com/nikesh-arora-mythos-is-real-analytical-saas-is-dead-and-google-can-be-a-10t-company",
+          "source": "All-In Podcast",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "Nikesh Arora discusses the death of analytical SaaS and Google's potential, offering strategic insights for UTU."
+        },
+        {
+          "headline": "Kiro: Bring engineering rigor to agentic development",
+          "url": "https://kiro.dev/",
+          "source": "AI Builders",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "Kiro aims to bring engineering rigor to agentic development, directly applicable to David's Hermes AI agent."
+        },
+        {
+          "headline": "Best AI Coding Agents for 2026: Real-World Developer Reviews",
+          "url": "https://www.faros.ai/blog/best-ai-coding-agents-2026",
+          "source": "AI Builders",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "Faros.ai reviews the best AI coding agents for 2026, which could inform development for UTU or Saucy Investors Club."
+        },
+        {
+          "headline": "GitHub - different-ai/openwork: An open-source alternative to Claude Cowork (powered by opencode) · GitHub",
+          "url": "https://github.com/different-ai/openwork",
+          "source": "AI Builders",
+          "score": 8,
+          "category": "AI BUILDERS",
+          "summary": "Openwork is an open-source alternative to Claude Cowork, powered by opencode, relevant for David's Hermes AI agent."
+        },
+        {
+          "headline": "Test Your Idea in 120s - AI Startup Validator & Market Analysis 2026 | IdeaProof",
+          "url": "https://ideaproof.io/lists/ai-startup-ideas",
+          "source": "Solopreneur",
+          "score": 8,
+          "category": "SMALL BUSINESS",
+          "summary": "IdeaProof offers an AI Startup Validator and Market Analysis tool for 2026, useful for validating new features or products for David's businesses."
+        },
+        {
+          "headline": "Hey Siri, meet AI",
+          "url": "https://www.bensbites.com/p/hey-siri-meet-ai",
+          "source": "Ben's Bites",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Apple is integrating AI into Siri, allowing it to control apps and understand context, which could impact how personal AI agents like Hermes interact with the iOS ecosystem."
+        },
+        {
+          "headline": "Opus 4.8",
+          "url": "https://www.bensbites.com/p/opus-48",
+          "source": "Ben's Bites",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Opus 4.8 is a new model release from Anthropic, which could offer improved capabilities for David's Hermes AI agent."
+        },
+        {
+          "headline": "Anthropic Walks Back Policy That Could Have ‘Sabotaged’ AI Researchers Using Claude",
+          "url": "https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic walked back a policy that could have hindered AI researchers using Claude, which is relevant for David's Hermes agent if it uses Claude or similar models."
+        },
+        {
+          "headline": "If Claude Fable stops helping you, you'll never know",
+          "url": "https://simonwillison.net/2026/Jun/10/if-claude-fable-stops-helping-you/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "The article discusses the lack of transparency when Claude Fable's performance changes, a critical consideration for David's Hermes AI agent if relying on such models."
+        },
+        {
+          "headline": "Initial impressions of Claude Fable 5",
+          "url": "https://simonwillison.net/2026/Jun/9/claude-fable-5/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Initial impressions of Claude Fable 5 provide direct insights into a new model that could be used or integrated with David's Hermes AI agent."
+        },
+        {
+          "headline": "Can Voice Agents Handle Bilingual Customers? Benchmarking Frontier ASR on Code-Switched Speech",
+          "url": "https://huggingface.co/blog/ServiceNow-AI/code-switching",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Benchmarking frontier ASR on code-switched speech for voice agents is relevant for potential voice interfaces or multilingual capabilities for Hermes or UTU."
+        },
+        {
+          "headline": "Introducing North Mini Code: Cohere’s First Model For Developers",
+          "url": "https://huggingface.co/blog/CohereLabs/introducing-north-mini-code",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "North Mini Code, Cohere’s first model for developers, is a new tool that could be integrated into David's Hermes AI agent or other projects."
+        },
+        {
+          "headline": "The Open Source Community is backing OpenEnv for Agentic RL",
+          "url": "https://huggingface.co/blog/openenv-agentic-rl",
+          "source": "Hugging Face Blog",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "The open-source community backing OpenEnv for Agentic RL indicates a growing ecosystem for AI agent development, relevant to Hermes."
+        },
+        {
+          "headline": "Claude Fable 5 🚀, Gemini 3.5 Live Translate 📱, scaling test time compute 📈",
+          "url": "https://tldr.tech/ai/2026-06-10",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Claude Fable 5 and Gemini 3.5 Live Translate were released, with new developments in scaling test time compute."
+        },
+        {
+          "headline": "OpenAI S-1 🇺🇸, Siri AI 📱, Xiaomi Ultraspeed ⚡",
+          "url": "https://tldr.tech/ai/2026-06-09",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "OpenAI's S-1 filing, Siri AI updates, and Xiaomi Ultraspeed were announced."
+        },
+        {
+          "headline": "OpenAI govt stake 🇺🇸, Google compute deal 🚀, Microsoft Scout launch 🤖",
+          "url": "https://tldr.tech/ai/2026-06-08",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "OpenAI secured a government stake, Google made a compute deal, and Microsoft launched Scout."
+        },
+        {
+          "headline": "Anthropic Oceanus leaks 🤖, ChatGPT Dreaming 💭, recursive self improvement 🚀",
+          "url": "https://tldr.tech/ai/2026-06-05",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic Oceanus leaks, ChatGPT Dreaming, and recursive self-improvement advancements were reported."
+        },
+        {
+          "headline": "Codex Sites 💻, Microsoft models 🤖, Anthropic cost backlash 💸",
+          "url": "https://tldr.tech/ai/2026-06-03",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Codex Sites and new Microsoft models were released, alongside Anthropic cost backlash."
+        },
+        {
+          "headline": "Anthropic IPO filing 📄, OpenAI on AWS ☁️, Perplexity search code 🔍",
+          "url": "https://tldr.tech/ai/2026-06-02",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic filed for an IPO, OpenAI is now on AWS, and Perplexity released search code."
+        },
+        {
+          "headline": "Copilot super app leaks 🤖, Minimax M3 ➕, Nvidia N1X ⚡️",
+          "url": "https://tldr.tech/ai/2026-06-01",
+          "source": "TLDR AI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Copilot super app leaks, Minimax M3, and Nvidia N1X were highlighted."
+        },
+        {
+          "headline": "When Long-Term Investments Finally Pay Off",
+          "url": "https://thebootstrappedfounder.com/when-long-term-investments-finally-pay-off/",
+          "source": "Bootstrapped Founder",
+          "score": 7,
+          "category": "SMALL BUSINESS",
+          "summary": "This story explores how long-term investments eventually yield returns, providing a builder's perspective for David's ventures."
+        },
+        {
+          "headline": "Babysitting the Machine: Glean's Rebecca Hinds on the Hidden Human Labor of AI at Work",
+          "url": "https://www.cognitiverevolution.ai/babysitting-the-machine-glean-s-rebecca-hinds-on-the-hidden-human-labor-of-ai-at-work/",
+          "source": "The Cognitive Revolution",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Rebecca Hinds discusses the hidden human labor involved in AI at work, offering insights into managing AI agents like Hermes."
+        },
+        {
+          "headline": "Nested Learning: Ali Behrouz on the Quest for Continual Learning & Illusion of AI Architectures",
+          "url": "https://www.cognitiverevolution.ai/nested-learning-ali-behrouz-on-the-quest-for-continual-learning-illusion-of-ai-architectures/",
+          "source": "The Cognitive Revolution",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Ali Behrouz discusses continual learning and AI architectures, relevant for understanding and developing David's Hermes AI agent."
+        },
+        {
+          "headline": "The Model Eats the Scaffolding: DeepMind's Logan Kilpatrick & Tulsee Doshi on 3.5 Flash, Omni & More",
+          "url": "https://www.cognitiverevolution.ai/the-model-eats-the-scaffolding-deepmind-s-logan-kilpatrick-tulsee-doshi-on-3-5-flash-omni-more/",
+          "source": "The Cognitive Revolution",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Logan Kilpatrick and Tulsee Doshi discuss DeepMind's 3.5 Flash and Omni, providing official AI platform news."
+        },
+        {
+          "headline": "Brutally honest guide to not losing money in the market",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS5754626623.mp3",
+          "source": "My First Million",
+          "score": 7,
+          "category": "WORKFLOWS",
+          "summary": "This guide offers honest advice on avoiding financial losses in the market, directly applicable to David's Saucy Investors Club."
+        },
+        {
+          "headline": "The \"Idiot Index\": the simple math that made Elon Musk billions",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS3077525519.mp3",
+          "source": "My First Million",
+          "score": 7,
+          "category": "WORKFLOWS",
+          "summary": "The 'Idiot Index' provides a simple mathematical approach to wealth building, relevant for Saucy Investors Club."
+        },
+        {
+          "headline": "Mohnish Pabrai: This will save you 10 years of bad investments",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS7765141039.mp3",
+          "source": "My First Million",
+          "score": 7,
+          "category": "WORKFLOWS",
+          "summary": "Mohnish Pabrai shares advice on avoiding bad investments, directly applicable to David's Saucy Investors Club."
+        },
+        {
+          "headline": "Bill Maris: How Google Could Crush AI Competitors, Why Small Funds Win, and AI's Atari Stage",
+          "url": "https://allinchamathjason.libsyn.com/bill-maris-how-google-could-crush-ai-competitors-why-small-funds-win-and-ais-atari-stage",
+          "source": "All-In Podcast",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Bill Maris discusses how Google could dominate AI and why small funds succeed, offering strategic insights for David's AI ventures."
+        },
+        {
+          "headline": "Dan Loeb: The Lost Art of Short Selling, and Why Stock Picking is Back",
+          "url": "https://allinchamathjason.libsyn.com/dan-loeb-the-lost-art-of-short-selling-and-why-stock-picking-is-back",
+          "source": "All-In Podcast",
+          "score": 7,
+          "category": "WORKFLOWS",
+          "summary": "Dan Loeb discusses short selling and the return of stock picking, directly applicable to David's Saucy Investors Club."
+        },
+        {
+          "headline": "Anthropic Claude Model Release Timeline - Model Family Tree, Capability Evolution, and Platform Availability | hidekazu-konishi.com",
+          "url": "https://hidekazu-konishi.com/entry/anthropic_claude_model_release_timeline.html",
+          "source": "Anthropic",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic's Claude Model Release Timeline provides a detailed overview of their model family tree, capability evolution, and platform availability, which is directly relevant for David's Hermes AI agent."
+        },
+        {
+          "headline": "Claude Code Increases Weekly Limits by 50% Through July 13, 2026: Anthropic's Anti-Codex Move",
+          "url": "https://pasqualepillitteri.it/en/news/2494/claude-code-weekly-limits-50-percent-anti-codex-anthropic-2026",
+          "source": "Anthropic",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic increased Claude Code weekly limits by 50% through July 13, 2026, which directly impacts the operational capacity of David's Hermes AI agent."
+        },
+        {
+          "headline": "Anthropic releases a less-powerful version of its most advanced model - POLITICO",
+          "url": "https://www.politico.com/news/2026/06/09/anthropic-makes-mythos-level-ai-model-available-to-the-public-00954829",
+          "source": "Anthropic",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic released a less-powerful version of its most advanced model, making it publicly available, which could offer a more cost-effective option for David's Hermes AI agent."
+        },
+        {
+          "headline": "Anthropic launches Claude Fable 5: Public version of its most powerful AI model arrives with safeguards",
+          "url": "https://www.techlusive.in/artificial-intelligence/anthropic-launches-claude-fable-5-public-ai-model-1665438/",
+          "source": "Anthropic",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Anthropic launched Claude Fable 5, a public version of its most powerful AI model with safeguards, providing a new advanced option for David's Hermes AI agent."
+        },
+        {
+          "headline": "ChatGPT — Release Notes | OpenAI Help Center",
+          "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+          "source": "OpenAI",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "OpenAI's ChatGPT Release Notes provide updates on their platform, which are directly applicable to David's Hermes AI agent."
+        },
+        {
+          "headline": "Gemini 3.5 — Google DeepMind",
+          "url": "https://deepmind.google/models/gemini/",
+          "source": "Google DeepMind",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Google DeepMind released Gemini 3.5, offering new capabilities that could be integrated into David's Hermes AI agent."
+        },
+        {
+          "headline": "Gemini 3.1 Pro | Google's Most Advanced AI Model 2026",
+          "url": "https://gemini3.us/gemini-3.1-pro",
+          "source": "Google DeepMind",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Google released Gemini 3.1 Pro, their most advanced AI model in 2026, which could enhance David's Hermes AI agent."
+        },
+        {
+          "headline": "Mistral Models Overview",
+          "url": "https://docs.mistral.ai/models/overview",
+          "source": "Mistral",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Mistral Models Overview provides information on their AI models, which could be relevant for David's Hermes AI agent."
+        },
+        {
+          "headline": "Frontier AI LLMs, assistants, agents, services | Mistral",
+          "url": "https://mistral.ai/",
+          "source": "Mistral",
+          "score": 7,
+          "category": "PLATFORM NEWS",
+          "summary": "Mistral.ai offers Frontier AI LLMs, assistants, agents, and services, which are directly applicable to David's Hermes AI agent."
+        },
+        {
+          "headline": "Open Source AI Video Editor 2026: The Future of Editing",
+          "url": "https://resource.digen.ai/open-source-ai-video-editor-2026/",
+          "source": "AI Builders",
+          "score": 7,
+          "category": "AI BUILDERS",
+          "summary": "Digen.ai discusses open-source AI video editors for 2026, which could be useful for marketing ChillWave Threads."
+        },
+        {
+          "headline": "I signed up for another SaaS",
+          "url": "https://www.bensbites.com/p/i-signed-up-for-another-saas",
+          "source": "Ben's Bites",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "The author signed up for another SaaS, highlighting the ongoing market for SaaS products like David's UTU."
+        },
+        {
+          "headline": "Is SaaS dead?",
+          "url": "https://www.bensbites.com/p/is-saas-dead",
+          "source": "Ben's Bites",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "The article discusses the state of SaaS, offering insights relevant to David's UTU business model."
+        },
+        {
+          "headline": "Google's take on openclaw",
+          "url": "https://www.bensbites.com/p/googles-take-on-openclaw",
+          "source": "Ben's Bites",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Google's perspective on 'openclaw' could provide insights into open-source AI development relevant to Hermes."
+        },
+        {
+          "headline": "DiffusionGemma",
+          "url": "https://simonwillison.net/2026/Jun/10/diffusiongemma/#atom-everything",
+          "source": "Simon Willison's Blog",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "DiffusionGemma is a new AI model, potentially offering capabilities for image generation or other creative tasks relevant to ChillWave Threads or Hermes."
+        },
+        {
+          "headline": "Why AI hasn't replaced software engineers, and won't",
+          "url": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
+          "source": "Hacker News",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "The article discusses why AI hasn't replaced software engineers, offering insights into the current limitations and future of AI development relevant to David's AI agent and SaaS."
+        },
+        {
+          "headline": "Raspberry Pi 5 – 16GB RAM",
+          "url": "https://www.adafruit.com/product/6125?src=raspberrypi",
+          "source": "Hacker News",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "The release of Raspberry Pi 5 with 16GB RAM offers a powerful and affordable hardware option for local AI agent development or other small business infrastructure."
+        },
+        {
+          "headline": "Migrating Your GitHub CI to Hugging Face Jobs",
+          "url": "https://huggingface.co/blog/github-ci-hf-jobs",
+          "source": "Hugging Face Blog",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "Migrating GitHub CI to Hugging Face Jobs offers a potential workflow optimization for David's development processes for UTU, ChillWave, or Hermes."
+        },
+        {
+          "headline": "Nemotron 3.5 Content Safety: Customizable Multimodal Safety for Global Enterprise AI",
+          "url": "https://huggingface.co/blog/nvidia/nemotron-3-5-content-safety",
+          "source": "Hugging Face Blog",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Nemotron 3.5 Content Safety offers customizable multimodal safety for enterprise AI, which could be a consideration for the ethical development of Hermes."
+        },
+        {
+          "headline": "Direct Preference Optimization Beyond Chatbots",
+          "url": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+          "source": "Hugging Face Blog",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Direct Preference Optimization Beyond Chatbots explores advanced AI training techniques that could be applied to improve Hermes's performance."
+        },
+        {
+          "headline": "Strategy (MSTR) CEO Says Bitcoin Sale Was About Market ‘Inoculation,’ Not a Retreat",
+          "url": "https://bitcoinmagazine.com/news/strategy-mstr-ceo-says-bitcoin-sale",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "MicroStrategy CEO Michael Saylor clarified a Bitcoin sale was for market 'inoculation,' not a retreat, showing continued institutional strategy around Bitcoin."
+        },
+        {
+          "headline": "Morgan Stanley’s Bitcoin Executive Says Education — Not Products — Is Wall Street’s Real Obstacle",
+          "url": "https://bitcoinmagazine.com/news/morgan-stanley-bitcoin-executive-education",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "A Morgan Stanley executive states that education, not products, is Wall Street's real obstacle to Bitcoin adoption, highlighting a key challenge for broader acceptance."
+        },
+        {
+          "headline": "Traditional Finance is Rushing Into Crypto as Institutions Buy Bitcoin’s Dip: Axios",
+          "url": "https://bitcoinmagazine.com/markets/traditional-finance-rushing-to-crypto",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "Traditional finance is reportedly rushing into crypto as institutions buy Bitcoin's dip, indicating growing institutional adoption."
+        },
+        {
+          "headline": "New Documentary ‘Bitcoin Season’ Charts Bitcoin’s Push Into the NBA",
+          "url": "https://bitcoinmagazine.com/news/bitcoin-season-charts-bitcoins-in-the-nba",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "A new documentary 'Bitcoin Season' charts Bitcoin’s push into the NBA, showcasing real-world adoption by a major sports league."
+        },
+        {
+          "headline": "Five Years On, El Salvador Is Still Buying Bitcoin",
+          "url": "https://bitcoinmagazine.com/news/five-years-on-el-salvador-bitcoin",
+          "source": "Bitcoin Magazine",
+          "score": 6,
+          "category": "BITCOIN",
+          "summary": "El Salvador is still buying Bitcoin five years on, demonstrating continued government adoption and commitment."
+        },
+        {
+          "headline": "Follow Your Passion (But Not Like That)",
+          "url": "https://thebootstrappedfounder.com/follow-your-passion-but-not-like-that/",
+          "source": "Bootstrapped Founder",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "This piece offers a nuanced perspective on following one's passion in business, relevant for David as a multi-venture founder."
+        },
+        {
+          "headline": "Don’t Give Up… Your Assumptions",
+          "url": "https://thebootstrappedfounder.com/dont-give-up-your-assumptions/",
+          "source": "Bootstrapped Founder",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "This piece encourages founders to challenge their assumptions, a valuable lesson for David's entrepreneurial journey."
+        },
+        {
+          "headline": "Your Biggest Lever: Designing your AI Career for Maximum Impact, with 80,000 Hours founder Ben Todd",
+          "url": "https://www.cognitiverevolution.ai/your-biggest-lever-designing-your-ai-career-for-maximum-impact-with-80000-hours-founder-ben-todd/",
+          "source": "The Cognitive Revolution",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "Ben Todd discusses designing an AI career for maximum impact, offering a broader perspective on David's AI ventures."
+        },
+        {
+          "headline": "All Compute Is Food: Palisade's Jeffrey Ladish on AI Shutdown Resistance, Self-Replication & Ecology",
+          "url": "https://www.cognitiverevolution.ai/all-compute-is-food-palisade-s-jeffrey-ladish-on-ai-shutdown-resistance-self-replication-ecology/",
+          "source": "The Cognitive Revolution",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Jeffrey Ladish discusses AI shutdown resistance and self-replication, offering a high-level view of AI system resilience."
+        },
+        {
+          "headline": "We found 7 business ideas that will blow up in 2026",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS7543635910.mp3",
+          "source": "My First Million",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "This episode identifies business ideas projected to grow in 2026, offering potential inspiration for David's ventures."
+        },
+        {
+          "headline": "We hit record on our private strategy session",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS2231923730.mp3",
+          "source": "My First Million",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "A private strategy session offers general business and investment insights."
+        },
+        {
+          "headline": "The best AI agents in 2026 | Product Hunt",
+          "url": "https://www.producthunt.com/categories/ai-agents",
+          "source": "Product Hunt",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Product Hunt lists the best AI agents in 2026, offering potential tools or inspiration for David's Hermes AI agent."
+        },
+        {
+          "headline": "Top-rated AI infrastructure & platform tools | 2026 | Product Hunt",
+          "url": "https://www.producthunt.com/categories/ai-infrastructure",
+          "source": "Product Hunt",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Product Hunt features top-rated AI infrastructure and platform tools in 2026, which could be useful for scaling David's AI agent or other SaaS products."
+        },
+        {
+          "headline": "The best AI coding agents in 2026 | Product Hunt",
+          "url": "https://www.producthunt.com/categories/ai-coding-agents",
+          "source": "Product Hunt",
+          "score": 6,
+          "category": "AI BUILDERS",
+          "summary": "Product Hunt showcases the best AI coding agents in 2026, which could improve development workflows for UTU or Saucy Investors Club."
+        },
+        {
+          "headline": "The Best AI Workflow Automation Tools | Product Hunt",
+          "url": "https://www.producthunt.com/categories/ai-workflow-automation",
+          "source": "Product Hunt",
+          "score": 6,
+          "category": "WORKFLOWS",
+          "summary": "Product Hunt highlights the best AI workflow automation tools, which could streamline operations for UTU, ChillWave Threads, or Saucy Investors Club."
+        },
+        {
+          "headline": "AI Side Hustles: How Real People Are Making Money with AI in 2026 | Side Hustle School",
+          "url": "https://sidehustleschool.com/guides/ai-side-hustles/",
+          "source": "The Hustle",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "Side Hustle School's guide on AI Side Hustles in 2026 provides actionable insights for making money with AI, relevant to David's ChillWave Threads or new ventures."
+        },
+        {
+          "headline": "The most successful one-person businesses do these things - Fast Company",
+          "url": "https://www.fastcompany.com/91556512/the-most-successful-one-person-businesses-have-these-things-in-common",
+          "source": "Saturday Solopreneur",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "Fast Company details common traits of the most successful one-person businesses, offering actionable insights for David's solopreneur ventures like ChillWave Threads."
+        },
+        {
+          "headline": "So, you want to be a solopreneur. AI helps but here’s what you need to know | The Straits Times",
+          "url": "https://www.straitstimes.com/opinion/so-you-want-to-be-a-solopreneur-ai-helps-but-heres-what-you-need-to-know",
+          "source": "Saturday Solopreneur",
+          "score": 6,
+          "category": "SMALL BUSINESS",
+          "summary": "The Straits Times discusses what aspiring solopreneurs need to know, including how AI can help, providing actionable insights for David's businesses."
+        },
+        {
+          "headline": "DeepSeek fundraising 💰, Meta model delays ⌛ , Gemma 4 12B 🤖",
+          "url": "https://tldr.tech/ai/2026-06-04",
+          "source": "TLDR AI",
+          "score": 5,
+          "category": "PLATFORM NEWS",
+          "summary": "Meta model delays and the release of Gemma 4 12B were noted."
+        },
+        {
+          "headline": "AI in the AM — Week 1 Highlights (June 2026)",
+          "url": "https://www.cognitiverevolution.ai/ai-in-the-am-week-1-highlights-june-2026/",
+          "source": "The Cognitive Revolution",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "This provides a weekly highlight of AI news, offering a general overview of the AI landscape."
+        },
+        {
+          "headline": "The insane true story behind MTV",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS8333268290.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The story behind MTV's founding offers general entrepreneurial insights."
+        },
+        {
+          "headline": "The 50 richest families in America are betting on this trend",
+          "url": "https://pdst.fm/e/traffic.megaphone.fm/HS3665821831.mp3",
+          "source": "My First Million",
+          "score": 5,
+          "category": "WORKFLOWS",
+          "summary": "This episode discusses investment trends favored by wealthy families, offering insights for Saucy Investors Club."
+        },
+        {
+          "headline": "Senators John Fetterman and Dave McCormick: Bipartisanship, Money in DC, Datacenters, Graham Platner",
+          "url": "https://allinchamathjason.libsyn.com/senators-john-fetterman-and-dave-mccormick-bipartisanship-money-in-dc-datacenters-graham-platner",
+          "source": "All-In Podcast",
+          "score": 5,
+          "category": "WORKFLOWS",
+          "summary": "Senators Fetterman and McCormick discuss bipartisanship, money in DC, and datacenters, offering a broad economic and political context."
+        },
+        {
+          "headline": "Dan Dreyfus: America's Critical Minerals Crisis is Here",
+          "url": "https://allinchamathjason.libsyn.com/dan-dreyfus-americas-critical-minerals-crisis-is-here",
+          "source": "All-In Podcast",
+          "score": 5,
+          "category": "WORKFLOWS",
+          "summary": "Dan Dreyfus discusses America's critical minerals crisis, providing a macro-economic perspective."
+        },
+        {
+          "headline": "Polsinelli tops Missouri revenue rankings in milestone year",
+          "url": "https://molawyersmedia.com/2026/06/10/polsinelli-money-rankings-2025-revenue/",
+          "source": "Indie Hackers",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "Polsinelli, a law firm, topped Missouri revenue rankings, indicating strong performance in a professional services business."
+        },
+        {
+          "headline": "Loto-Québec Achieves Historic $3B Revenue Milestone",
+          "url": "https://news.worldcasinodirectory.com/loto-quebec-posts-record-3-billion-in-2025-2026-fiscal-year-123131",
+          "source": "Indie Hackers",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "Loto-Québec achieved a historic $3 billion revenue milestone in its 2025-2026 fiscal year."
+        },
+        {
+          "headline": "Cyber Security Breach Statistics [2026]: Key Facts & Data",
+          "url": "https://app.stationx.net/articles/cyber-security-breach-statistics",
+          "source": "Indie Hackers",
+          "score": 5,
+          "category": "WORKFLOWS",
+          "summary": "Cyber Security Breach Statistics for 2026 provide key facts and data relevant to protecting online businesses."
+        },
+        {
+          "headline": "The Best New Films To Watch This April 2026 - The Glossary",
+          "url": "https://theglossarymagazine.com/arts-culture/best-new-films/",
+          "source": "Indie Hackers",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "The Glossary magazine highlights new films for April 2026, relevant for a theater scheduling SaaS like UTU."
+        },
+        {
+          "headline": "Upcoming 2026 games: All the new PC games you won't want to miss, from big hits to hidden gems",
+          "url": "https://www.pcgamer.com/games/new-pc-games-2026/",
+          "source": "Indie Hackers",
+          "score": 5,
+          "category": "SMALL BUSINESS",
+          "summary": "PC Gamer lists upcoming 2026 PC games, which could be relevant for understanding entertainment trends for UTU."
+        },
+        {
+          "headline": "Top 10 Artificial Intelligence Companies to Watch in 2026",
+          "url": "https://blog.intimetec.com/top-artificial-intelligence-companies",
+          "source": "Solopreneur",
+          "score": 5,
+          "category": "AI BUILDERS",
+          "summary": "InTimeTec lists the top 10 Artificial Intelligence companies to watch in 2026, providing an overview of the AI landscape."
+        }
+      ]
+    },
+    {
       "date": "Monday, June 8, 2026",
       "items": [
         {
